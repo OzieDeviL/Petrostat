@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SCRIBUSUTF8NEW Version="1.4.2">
+    <DOCUMENT ANZPAGES="6" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" PRESET="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" ORIENTATION="0" PAGESIZE="Letter" FIRSTNUM="1" BOOK="0" AUTOSPALTEN="1" ABSTSPALTEN="11" UNITS="0" DFONT="Arial Regular" DSIZE="12" DCOL="1" DGAP="0" TabFill="" TabWidth="36" AUTHOR="" COMMENTS="" KEYWORDS="" PUBLISHER="" DOCDATE="" DOCTYPE="" DOCFORMAT="" DOCIDENT="" DOCSOURCE="" DOCLANGINFO="" DOCRELATION="" DOCCOVER="" DOCRIGHTS="" DOCCONTRIB="" TITLE="" SUBJECT="" VHOCH="33" VHOCHSC="66" VTIEF="33" VTIEFSC="66" VKAPIT="75" BASEGRID="14.4" BASEO="0" AUTOL="20" UnderlinePos="-1" UnderlineWidth="-1" StrikeThruPos="-1" StrikeThruWidth="-1" GROUPC="3" HCMS="0" DPSo="0" DPSFo="0" DPuse="0" DPgam="0" DPbla="1" DPMo="sRGB IEC61966-2.1" DPPr="Fogra27L CMYK Coated Press" DPIn="sRGB IEC61966-2.1" DPInCMYK="Fogra27L CMYK Coated Press" DPIn2="sRGB IEC61966-2.1" DPIn3="Fogra27L CMYK Coated Press" DISc="1" DIIm="0" ALAYER="0" LANGUAGE="English" MINWORDLEN="3" HYCOUNT="2" AUTOMATIC="1" AUTOCHECK="0" GUIDELOCK="0" SnapToGuides="0" SnapToGrid="0" MINGRID="20.4" MAJGRID="102" SHOWGRID="1" SHOWGUIDES="1" showcolborders="1" SHOWFRAME="1" SHOWLAYERM="0" SHOWMARGIN="1" SHOWBASE="0" SHOWPICT="1" SHOWControl="0" SHOWLINK="0" rulerMode="1" showrulers="1" showBleed="1" rulerXoffset="0" rulerYoffset="0" GuideRad="10" GRAB="4" POLYC="4" POLYF="0.707106781186548" POLYR="0" POLYCUR="0" POLYFD="0" POLYS="0" AutoSave="1" AutoSaveTime="300000" ScratchBottom="20" ScratchLeft="100" ScratchRight="100" ScratchTop="20" GapHorizontal="0" GapVertical="40" StartArrow="0" EndArrow="0" PEN="Black" BRUSH="None" PENLINE="Black" PENTEXT="Black" StrokeText="Black" TextBackGround="None" TextLineColor="None" TextBackGroundShade="100" TextLineShade="100" TextPenShade="100" TextStrokeShade="100" STIL="1" STILLINE="1" WIDTH="1" WIDTHLINE="1" PENSHADE="100" LINESHADE="100" BRUSHSHADE="100" MAGMIN="10" MAGMAX="3200" MAGSTEP="200" CPICT="None" PICTSHADE="100" PICTSCX="1" PICTSCY="1" PSCALE="1" PASPECT="1" EmbeddedPath="0" HalfRes="1" dispX="10" dispY="10" constrain="15" MINORC="#00ff00" MAJORC="#00ff00" GuideC="#000080" BaseC="#c0c0c0" GuideZ="10" BACKG="1" PAGEC="#ffffff" MARGC="#0000ff" RANDF="0" currentProfile="PostScript">
+        <CheckProfile Name="PDF 1.3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.4" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF 1.5" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="0" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PDF/X-3" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="1" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <CheckProfile Name="PostScript" ignoreErrors="0" autoCheck="1" checkGlyphs="1" checkOrphans="1" checkOverflow="1" checkPictures="1" checkResolution="1" checkTransparency="1" minResolution="144" maxResolution="2400" checkAnnotations="0" checkRasterPDF="1" checkForGIF="1" ignoreOffLayers="0" checkOffConflictLayers="0"/>
+        <MultiLine Name=""/>
+        <COLOR NAME="Black" CMYK="#000000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Blue" RGB="#0000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Cool Black" CMYK="#990000ff" Spot="0" Register="0"/>
+        <COLOR NAME="Cyan" CMYK="#ff000000" Spot="0" Register="0"/>
+        <COLOR NAME="Green" RGB="#00ff00" Spot="0" Register="0"/>
+        <COLOR NAME="Magenta" CMYK="#00ff0000" Spot="0" Register="0"/>
+        <COLOR NAME="Red" RGB="#ff0000" Spot="0" Register="0"/>
+        <COLOR NAME="Registration" CMYK="#ffffffff" Spot="0" Register="1"/>
+        <COLOR NAME="Rich Black" CMYK="#996666ff" Spot="0" Register="0"/>
+        <COLOR NAME="Warm Black" CMYK="#00994cff" Spot="0" Register="0"/>
+        <COLOR NAME="White" CMYK="#00000000" Spot="0" Register="0"/>
+        <COLOR NAME="Yellow" CMYK="#0000ff00" Spot="0" Register="0"/>
+        <HYPHEN/>
+        <STYLE NAME="Default Paragraph Style" DefaultStyle="1" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Large Heading" ALIGN="1" VOR="24" NACH="0" FONT="Eurostile Regular" FONTSIZE="18" LANGUAGE="English"/>
+        <STYLE NAME="Small Heading" PARENT="Large Heading" ALIGN="3" VOR="15" NACH="3" FONTSIZE="11"/>
+        <STYLE NAME="Example Box" ALIGN="3" LINESPMode="0" LINESP="11" INDENT="5" RMARGIN="5" FIRST="0" VOR="6" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Italic" FONTSIZE="10"/>
+        <STYLE NAME="Copy of Default Paragraph Style (1)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (2)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (3)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (4)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (5)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (6)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (7)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (8)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (9)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Copy of Default Paragraph Style (10)" ALIGN="3" LINESPMode="0" LINESP="13" INDENT="0" RMARGIN="0" FIRST="0" VOR="0" NACH="0" DROP="0" DROPLIN="2" DROPDIST="0" OpticalMargins="14" FONT="Times New Roman Regular" FONTSIZE="11"/>
+        <STYLE NAME="Large Heading no Small Heading" PARENT="Large Heading" NACH="12"/>
+        <CHARSTYLE CNAME="Default Character Style" DefaultStyle="1" FONT="Times New Roman Regular" FONTSIZE="10" FEATURES="inherit" FCOLOR="Black" FSHADE="100" SCOLOR="Black" SSHADE="100" TXTSHX="5" TXTSHY="-5" TXTOUT="1" TXTULP="-0.1" TXTULW="-0.1" TXTSTP="-0.1" TXTSTW="-0.1" SCALEH="100" SCALEV="100" BASEO="0" KERN="0" LANGUAGE="English"/>
+        <LAYERS NUMMER="0" LEVEL="0" NAME="Background" SICHTBAR="1" DRUCKEN="1" EDIT="1" FLOW="1" TRANS="1" BLEND="0" OUTL="0" LAYERC="#000000"/>
+        <Printer firstUse="0" toFile="0" useAltPrintCommand="0" outputSeparations="0" useSpotColors="1" useColor="1" mirrorH="0" mirrorV="0" useICC="0" doGCR="0" doClip="0" setDevParam="0" useDocBleeds="1" cropMarks="0" bleedMarks="0" registrationMarks="0" colorMarks="0" includePDFMarks="1" PSLevel="3" PDLanguage="3" markOffset="0" BleedTop="0" BleedLeft="0" BleedRight="0" BleedBottom="0" printer="HP_LaserJet_1320_series" filename="" separationName="All" printerCommand="">
+            <Separation Name="Cyan"/>
+            <Separation Name="Magenta"/>
+            <Separation Name="Yellow"/>
+            <Separation Name="Black"/>
+        </Printer>
+        <PDF firstUse="0" Thumbnails="1" Articles="0" Bookmarks="0" Compress="1" CMethod="0" Quality="0" MirrorH="0" MirrorV="0" Clip="0" RotateDeg="0" PresentMode="0" RecalcPic="0" Grayscale="0" RGBMode="0" UseProfiles="0" UseProfiles2="0" Binding="0" PicRes="300" Resolution="300" Version="15" Intent="1" Intent2="0" SolidP="sRGB IEC61966-2.1" ImageP="sRGB IEC61966-2.1" PrintP="Fogra27L CMYK Coated Press" InfoString="" BTop="0" BLeft="0" BRight="0" BBottom="0" useDocBleeds="0" cropMarks="1" bleedMarks="1" registrationMarks="0" colorMarks="0" docInfoMarks="1" markOffset="0" ImagePr="0" PassOwner="" PassUser="" Permissions="-4" Encrypt="0" UseLayers="0" UseLpi="0" UseSpotColors="0" doMultiFile="0" displayBookmarks="0" displayFullscreen="0" displayLayers="0" displayThumbs="0" hideMenuBar="0" hideToolBar="0" fitWindow="0" PageLayout="0" openAction="">
+            <Fonts Name="Eurostile Regular"/>
+            <Fonts Name="Times New Roman Italic"/>
+            <Fonts Name="Times New Roman Regular"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <Effekte pageEffectDuration="1" pageViewDuration="1" effectType="0" Dm="0" M="0" Di="0"/>
+            <LPI Color="" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Black" Frequency="133" Angle="45" SpotFunction="3"/>
+            <LPI Color="Cyan" Frequency="133" Angle="105" SpotFunction="3"/>
+            <LPI Color="Magenta" Frequency="133" Angle="75" SpotFunction="3"/>
+            <LPI Color="Yellow" Frequency="133" Angle="90" SpotFunction="3"/>
+        </PDF>
+        <DocItemAttributes/>
+        <TablesOfContents/>
+        <PageSets>
+            <Set Name="Single Page" FirstPage="0" Rows="1" Columns="1"/>
+            <Set Name="Double Sided" FirstPage="0" Rows="1" Columns="2">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="3-Fold" FirstPage="0" Rows="1" Columns="3">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+            <Set Name="4-Fold" FirstPage="0" Rows="1" Columns="4">
+                <PageNames Name="Left Page"/>
+                <PageNames Name="Middle Left"/>
+                <PageNames Name="Middle Right"/>
+                <PageNames Name="Right Page"/>
+            </Set>
+        </PageSets>
+        <Sections>
+            <Section Number="0" Name="0" From="0" To="5" Type="Type_1_2_3" Start="1" Reversed="0" Active="1"/>
+        </Sections>
+        <MASTERPAGE PAGEXPOS="100" PAGEYPOS="20" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="Normal" MNAM="" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="20" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="0" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="852" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="1" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="1684" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="2" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="2516" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="3" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="3348" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="4" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <PAGE PAGEXPOS="100" PAGEYPOS="4180" PAGEWIDTH="612" PAGEHEIGHT="792" BORDERLEFT="40" BORDERRIGHT="40" BORDERTOP="40" BORDERBOTTOM="40" NUM="5" NAM="" MNAM="Normal" Size="Letter" Orientation="0" LEFT="0" PRESET="0" VerticalGuides="" HorizontalGuides="" AGhorizontalAutoGap="0" AGverticalAutoGap="0" AGhorizontalAutoCount="0" AGverticalAutoCount="0" AGhorizontalAutoRefer="0" AGverticalAutoRefer="0" AGSelection="0 0 0 0"/>
+        <FRAMEOBJECT OwnPage="-1" PTYPE="4" XPOS="422" YPOS="2931" WIDTH="224" HEIGHT="104" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="3" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="1" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 224 0 224 0 224 0 224 0 224 104 224 104 224 104 224 104 0 104 0 104 0 104 0 104 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 224 0 224 0 224 0 224 0 224 104 224 104 224 104 224 104 0 104 0 104 0 104 0 104 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="1" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="Example: The Minority Sectarian player bids 5 to allow immigration, which costs 5PC. He is opposed by the Authoritarian and Socialist who counterbid for a total of three. The Minority Sectarian  then increases his bid by 3 to make 8PC. The opposition does not bid any more. Because the difference between the final bid and final counterbid is 5 (8PC minus 3PC), the action occurs. All the bid and counterbid PC is then discarded."/>
+            <trail PARENT="Example Box"/>
+            <PageItemAttributes/>
+        </FRAMEOBJECT>
+        <MASTEROBJECT OwnPage="0" PTYPE="6" XPOS="137" YPOS="58" WIDTH="534" HEIGHT="715" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="Group1" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="1" groupsLastItem="2" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 534 0 534 0 534 0 534 0 534 715 534 715 534 715 534 715 0 715 0 715 0 715 0 715 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 534 0 534 0 534 0 534 0 534 715 534 715 534 715 534 715 0 715 0 715 0 715 0 715 0 0 0 0 " NUMGROUP="1" GROUPS="1 " startArrowIndex="0" endArrowIndex="0" OnMasterPage="Normal" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <MASTEROBJECT OwnPage="0" PTYPE="6" XPOS="139" YPOS="60" WIDTH="530" HEIGHT="711" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="4" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 530 0 530 0 530 0 530 0 530 711 530 711 530 711 530 711 0 711 0 711 0 711 0 711 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 530 0 530 0 530 0 530 0 530 711 530 711 530 711 530 711 0 711 0 711 0 711 0 711 0 0 0 0 " NUMGROUP="1" GROUPS="1 " startArrowIndex="0" endArrowIndex="0" OnMasterPage="Normal" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <MASTEROBJECT OwnPage="0" PTYPE="6" XPOS="144" YPOS="65" WIDTH="520.5" HEIGHT="701.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="2" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 520.5 0 520.5 0 520.5 0 520.5 0 520.5 701.5 520.5 701.5 520.5 701.5 520.5 701.5 0 701.5 0 701.5 0 701.5 0 701.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 520.5 0 520.5 0 520.5 0 520.5 0 520.5 701.5 520.5 701.5 520.5 701.5 520.5 701.5 0 701.5 0 701.5 0 701.5 0 701.5 0 0 0 0 " NUMGROUP="1" GROUPS="1 " startArrowIndex="0" endArrowIndex="0" OnMasterPage="Normal" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </MASTEROBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="166" YPOS="223" WIDTH="480" HEIGHT="531" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" MinWordTrack="0.96" COLUMNS="2" COLGAP="30" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 531 480 531 480 531 480 531 0 531 0 531 0 531 0 531 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 531 480 531 480 531 480 531 0 531 0 531 0 531 0 531 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="1" BACKITEM="-1">
+            <ITEXT CH="Introduction"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Petrostat is a 4-7 player game of political strategy. During the game, each player works to promote the interests of a particular ideology in a nascent country. Players may choose to cooperate or compete to achieve their unique victory conditions. Play proceeds through ten turns, each representing a decade in the life of your country."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="The Story"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Petrostat is a new nation emerging from the rule of an empire crumbling in the face of WWI. The population of this oil rich nation has long been split between a powerful ethnic minority from the old empire and an impoverished majority. During the rule of the empire, Petrostat's fractious ideologies were repressed, but now they are free to act out their ambitions on a national stage."/>
+            <para PARENT="Default Paragraph Style"/>
+            <breakcol/>
+            <ITEXT CH="Contents"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="7 bags of colored markers"/>
+            <breakline/>
+            <ITEXT CH="35 player policy tokens (7 per player)"/>
+            <breakline/>
+            <ITEXT CH="3 government policy tokens"/>
+            <breakline/>
+            <ITEXT CH="1  bag of wealth/spending coins"/>
+            <breakline/>
+            <ITEXT CH="1 bag of protest, war, and tax tokens"/>
+            <breakline/>
+            <ITEXT CH="1 market performance token"/>
+            <breakline/>
+            <ITEXT CH="2 oil barrel tokens"/>
+            <breakline/>
+            <ITEXT CH="3 orange disc markers"/>
+            <breakline/>
+            <ITEXT CH="2 d4"/>
+            <breakline/>
+            <ITEXT CH="1 d6"/>
+            <breakline/>
+            <ITEXT CH="7 player cards"/>
+            <breakline/>
+            <ITEXT CH="1 government card"/>
+            <breakline/>
+            <ITEXT CH="1 instruction manual"/>
+            <breakline/>
+            <ITEXT CH="2 gameboard pieces"/>
+            <para PARENT="Default Paragraph Style" ALIGN="0"/>
+            <breakframe/>
+            <ITEXT CH="Victory Conditions"/>
+            <para PARENT="Small Heading" ALIGN="0"/>
+            <ITEXT CH="In order to earn a victory, a player must have 40 victory points (VP) after the final turn of the game. All, some, or none of the players may achieve victory. See the player cards for conditions on gaining and losing VP."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Game concepts"/>
+            <para PARENT="Large Heading"/>
+            <ITEXT FONTSIZE="11" CH="Ideology"/>
+            <para PARENT="Small Heading" ALIGN="0"/>
+            <ITEXT CH="Each player is an ideology with colored markers that indicate their ideology's resources on the gameboard."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="Victory Points"/>
+            <para PARENT="Small Heading" ALIGN="0"/>
+            <ITEXT CH="At the end of the game, VPs determine which player(s) have achieved a victory. Conditions for gaining and losing VPs are printed on the player cards. A player's current victory point score is indicated by a marker of their color on the gameboard's VP track.  VPs are updated continuously during the game."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Policy Tokens"/>
+            <para PARENT="Small Heading" ALIGN="0"/>
+            <ITEXT CH="These are the basic unit of action in the game. Turns consist of playing these tokens. Policy tokens allow players to arrange the conditions in Petrostat to earn VPs. But playing a policy token requires a player to spend political capital."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="Political Capital"/>
+            <para PARENT="Small Heading" ALIGN="0" MinWordTrack="0.96"/>
+            <ITEXT CH="The basic currency of the game, required to play policy tokens. A player's available political capital (PC) is indicated by markers in the PC area of the gameboard. PC is primarily earned by winning population and army markers' alignment."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="Marker Alignment"/>
+            <para PARENT="Small Heading" ALIGN="0" MinWordTrack="0.96"/>
+            <ITEXT CH="The people of Petrostat are represented by makers in the Population and Army areas of the gameboard. The color of population and army markers indicate their alignment with an ideology—a player. The alignment of population markers can change during the game."/>
+            <para PARENT="Default Paragraph Style"/>
+            <breakcol/>
+            <ITEXT CH="Set-Up"/>
+            <para PARENT="Large Heading no Small Heading" ALIGN="1"/>
+            <ITEXT CH="Each player draws an ideology card—for 4 player games, remove the Authoritarian card. Follow the instructions on the ideology cards for initial placement of markers. Place 14 wealth in the treasury. Place an orange marker in the victory track box marked 1920. Place the oil reserves token, &quot;P&quot;-side down in the lowest box of the Victory track. Place the second oil reserve token in the box marked Medium in the International Oil Price area of the gameboard. Place the yellow market token in the boxed marked Growth in the Economy area of the gameboard. Place one tax token in the Economy area of the gameboard.   "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Play"/>
+            <para PARENT="Large Heading"/>
+            <ITEXT FONTSIZE="13" CH="Policy Rounds"/>
+            <para PARENT="Small Heading" ALIGN="0"/>
+            <ITEXT CH="Each player has eight policy tokens available—the governing player has several additional policy tokens. All players choose one policy token from their hand and place it face-down on the gameboard (see player cards for full descriptions of policy effects). All policy tokens are revealed simultaneously and each player pays the PC cost of their policy immediately. Play begins with the player who most recently filled up on gas (once the government is claimed, the first player of each round is the governing player). On their turn, players may choose to withdraw their policy rather than play it, but they do not get their spent PC back. Once all policy actions have been played, a second policy round is played, proceeding counterclockwise. Then a third round proceeds either clockwise or counterclockwise according to the first player's choice (they must announce their choice before policy tokens are chosen)."/>
+            <para PARENT="Small Heading"/>
+            <ITEXT FONTSIZE="13" CH="National Events"/>
+            <para PARENT="Small Heading" ALIGN="0"/>
+            <ITEXT CH="After the three policy rounds are completed, the following political events occur (on the final turn, skip step 7):"/>
+            <para PARENT="Default Paragraph Style" ALIGN="3"/>
+            <ITEXT FONTSIZE="11" CH="1. Surplus Discontent"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="If there are: 1-5 wealth leftover in the treasury, the governing player's poor markers realign—see below for automatic realignment rules; 6-15 wealth, the governing players' working class population markers realign additionally; 16+ wealth, middle class and army governing player's markers realign additionally."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="2. Elections"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="If the side marked “E” on the orange government disc is showing, hold an election. Total the number of population markers aligned with each party. Immediately transfer the government marker to the party with the mot population markers aligned to it. If the side marked “E” on the government disc is face-down, flip the disc to the side marked “E” and proceed without an election."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="3. Market Growth"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Roll 1d8 to determine the market growth this turn. Subtract -1 from the roll for each tax and protest token on the gameboard and -2 for each war token. Match the modified die result to the outcome table printed on the Domestic Market Performance area of the gameboard; move the market marker to the corresponding box. Move population markers up or down the wealth track according to the amounts printed next to each economic class (army markers are unaffected). Any markers which move up to a new economic class realign to the governing player. If a rich population marker exceeds the number of spaces in the wealth track, move it to the first box of its class and stack 10 wealth coins under it."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="4. Oil"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="New Reserves, 1920–1980: Move the oil reserves marker 3 spaces up the Victory track. Peak Oil, 1990–2010: Flip the oil barrel token to the side marked P. Reduce the oil reserves marker by half. After moving the oil reserves up or down, roll 1d6 to determine the price of oil this turn—move the oil price marker according to the outcome tables printed on the gameboard. Multiply the resulting price by the position of the oil reserves marker on the victory track and place wealth equal to the result in the treasury."/>
+            <para PARENT="Default Paragraph Style" ALIGN="3"/>
+            <ITEXT FONTSIZE="11" CH="5. Collect Taxes."/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="For each tax marker on the board, the governing player must decrease 5 wealth from any combination of population markers and place the corresponding amount in the treasury."/>
+            <para PARENT="Default Paragraph Style" MinWordTrack="0.96"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="6. Public Spending"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="All spending must be either removed from the gameboard or renewed by spending an equivalent amount of wealth. Spending on population markers may only be renewed from the treasury—at the governing player's discretion. When unrenewed spending is removed from a population marker, move it down the wealth track accordingly. Spending on army markers may be renewed either from the treasury or by subtracting wealth from the corresponding ideology's markers, at the aligned player's discretion. If an army marker does not receive 3 spending, move it back to the population track."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="7. Political Capital"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT FONTSIZE="11" CH="Halve all players' leftover PC."/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="Add (to a maximum of 9PC):"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="2 PC to the governing player,"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="1 PC to governing party non-dominant players,"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="1 PC to non-governing dominant ideologies,"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="1 PC per working class marker,"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="2 PC per middle class marker,"/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="3 PC per wealthy marker."/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="Army PC awarded according to their economic class (determined by summing the wealth and spending stacked beneath the army and comparing it to the numbered boxes on the Population track)."/>
+            <breakline/>
+            <ITEXT FONTSIZE="11" CH="1 PC per protest token on a player's markers."/>
+            <para PARENT="Default Paragraph Style" ALIGN="0"/>
+            <ITEXT FONTSIZE="11" CH="8. Victory Points"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="The Liberal, Authoritarian, and Socialist assess the once-per-turn VP conditions specified on their player cards. Then remove any war tokens from the board."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="9. New Turn"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="Move the turn token to the next decade on turn/victory track."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Other Game Concepts"/>
+            <para PARENT="Large Heading"/>
+            <ITEXT FONTSIZE="11" CH="Economic Class"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="Determines the amount of PC a cube will generate for the ideology that it is aligned with."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="Ethnicity"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Indicated by a marker's shape. Ethnicity is independent of alignment, except that the two sectarian players can only win the alignment of markers corresponding to their ethnicity. All other players can win the alignment of cubes from either ethnicity."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Spending"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="Red-side up coins. During the National Event phase, these coins must be renewed by an equivalent amount of wealth or be removed from the gameboard."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="Wealth"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="Represented by red-side down coins and/or the position of population markers on the wealth track. Unlike spending, wealth remains on the gameboard at the end of a turn. Whenever wealth is transferred, it becomes spending—except when resolving the genocide policy. "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Armies"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Population markers in the Armies box can block some policies or prevent another player's army from stopping a policy. Maintaining an army requires 3 spending each turn. Wealth for army spending can be transferred from the treasury—by the governing player only—or from markers of the army's ideology. Armies cannot be realigned by the propaganda policy token."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT FONTSIZE="11" CH="Parties"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Players can join one of the three political parties during the course of the game, indicated by a marker in the government area of the gameboard. Each party has a dominant ideology; the first player to join a party begins as its dominant ideology. "/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Government"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="The government is held by the dominant ideology of the governing party, indicated by an orange marker in the party area of the gameboard. A party can win control of the government if the election policy token is played or if a coup policy token is played by one of its ideologies. At the start of the game, the first player to join a political party wins control of the government. The governing player has several additional policy tokens available only to them."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Automatic Realignment"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="Whenever a marker moves up an economic class during the game, it immediately realigns to the governing player—except when the governing player is a Sectarian ideology and the marker does not match the governing player's ethnicity."/>
+            <breakline/>
+            <ITEXT CH="Whenever one of the governing player's markers moves down an economic class, it automatically realigns to another ideology immediately. The marker realigns to the most popular non-governing ideology of its economic class (in the case of a tie, tying players roll for each realigning marker). If there are no eligible non-governing markers in the realigning markers' economic class, realign according to the overall most popular non-governing ideology."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Rules for Army Conflicts"/>
+            <para PARENT="Large Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="Initiating"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="To initiate a conflict, in opposition to an applicable policy, a player moves one or more of their aligned armies to the conflict box. Any other player(s) may add their armies to either side of the conflict."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Resolution"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="If no armies are moved to the conflict box to fight for the policy, the policy is automatically defeated. In all other cases, conflicts are resolved through a series of one-on-one 1d4 rolls. Before each role, the governing player decides which two opposing armies will roll. If no player has claimed the government yet, the person who most recently filled up on gas decides which armies will role."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Effects"/>
+            <para PARENT="Small Heading" MinWordTrack="0.96"/>
+            <ITEXT CH="For each roll (including ties), place one war token in the market growth area of the gameboard. Defeated armies move to the population rather than return to the army box. Discard 1 PC for each roll lost. Add 2 PC per winning role. Victorious armies return to the army box."/>
+            <para PARENT="Default Paragraph Style"/>
+            <breakframe/>
+            <ITEXT CH="Nationalist Expansion"/>
+            <para PARENT="Large Heading"/>
+            <ITEXT CH="Contents"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="10 white octobox markers."/>
+            <breakline/>
+            <ITEXT CH="30 white cube markers."/>
+            <breakline/>
+            <ITEXT CH="1 government policy token"/>
+            <breakline/>
+            <ITEXT CH="1 bag of Foreign PC"/>
+            <breakline/>
+            <ITEXT CH="1 orange imperialism marker"/>
+            <breakline/>
+            <ITEXT CH="1 gameboard piece"/>
+            <para PARENT="Default Paragraph Style" ALIGN="0"/>
+            <ITEXT CH="Set Up"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="Place the orange imperialism marker in the Colony box of the imperialism track. For four player games, include the Sectarian players, the Socialist, and the Nationalist. 5+ players, add the Authoritarian. 6+ players, add the Liberal. 7 players, add the Fundamentalist."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Rules"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="If the governing player plays the imperialism policy token, transfer 5 wealth from the treasury to the Imperialism track. Move the imperialism marker to the next box on its track. Imperialism spending must be renewed in multiples of 5 from the treasury and/or players' markers' wealth. If spending is reduced on imperialism during National Events, move the imperialism marker down 1 box for every 5 spending unrenewed."/>
+            <breakline/>
+            <ITEXT CH="For every 5 imperialism spending, the governing player receives +1 VP during National Events. When a player plays the rally action, foreign political capital is made available to them in addition to the regular amount allowed. The amount of Foregin PC they can draw depends on the amount of oil reserves. They are allowed to take all, some or none of the available foreign PC. The Nationalist player will lose 1 VP for each foreign PC drawn. "/>
+            <para PARENT="Default Paragraph Style" ALIGN="3"/>
+            <breakline/>
+            <ITEXT CH="Foreign PC available per Rally action:"/>
+            <para PARENT="Default Paragraph Style" ALIGN="0"/>
+            <ITEXT CH="6–11 reserves, 1 Foreign PC available"/>
+            <breakline/>
+            <ITEXT CH="12–14 reserves, 2 Foreign PC avialable"/>
+            <breakline/>
+            <ITEXT CH="15+ reserves, 3 Foreign PC available"/>
+            <breakline/>
+            <ITEXT CH="Maximum PC+Foreign PC=9"/>
+            <para PARENT="Default Paragraph Style" ALIGN="0"/>
+            <breakcol/>
+            <ITEXT CH="Fundamentalist Expansion"/>
+            <para PARENT="Large Heading"/>
+            <ITEXT CH="Contents"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="10 brown octobox markers."/>
+            <breakline/>
+            <ITEXT CH="30 brown cube markers."/>
+            <breakline/>
+            <ITEXT CH="7 player policy tokens"/>
+            <breakline/>
+            <ITEXT CH="1 government policy token"/>
+            <breakline/>
+            <ITEXT CH="5 globalization tokens"/>
+            <breakline/>
+            <ITEXT CH="10 religious law tokens"/>
+            <para PARENT="Default Paragraph Style" ALIGN="0"/>
+            <ITEXT CH="Set Up"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="For four player games, include the Sectarian players, the Liberal, and the Fundamentalist. 5+ players, add the Socialist. 6+ players, add the Authoritarian. 7 players, add the Nationalist."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="Rules"/>
+            <para PARENT="Small Heading"/>
+            <ITEXT CH="During the Market Growth step of the National Events phase, add +1 to the roll for each globalization token on the gameboard."/>
+            <para PARENT="Default Paragraph Style"/>
+            <ITEXT CH="After the Public Spending step of the National Events phase, the Fundamentalist player must roll 1d6 for each globalization token on the board. If a roll results in a 1-3, a religious law token must be removed from the gameboard. Remove the token from the marker with the greatest wealth + spending. (if more than one marker has the same wealth + spending, remove all religious law markers of equivalent wealth + spending)."/>
+            <para PARENT="Default Paragraph Style"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="4" XPOS="166" YPOS="914" WIDTH="480" HEIGHT="672" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" MinWordTrack="0.96" COLUMNS="2" COLGAP="30" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="BiddingExample" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 672 480 672 480 672 480 672 0 672 0 672 0 672 0 672 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 672 480 672 480 672 480 672 0 672 0 672 0 672 0 672 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="2" BACKITEM="0">
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="166" YPOS="1746" WIDTH="480" HEIGHT="672" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" MinWordTrack="0.96" COLUMNS="2" COLGAP="30" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 672 480 672 480 672 480 672 0 672 0 672 0 672 0 672 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 672 480 672 480 672 480 672 0 672 0 672 0 672 0 672 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="3" BACKITEM="1">
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="4" XPOS="166" YPOS="2578" WIDTH="480" HEIGHT="672" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" MinWordTrack="0.96" COLUMNS="2" COLGAP="30" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 672 480 672 480 672 480 672 0 672 0 672 0 672 0 672 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 672 480 672 480 672 480 672 0 672 0 672 0 672 0 672 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="4" BACKITEM="2">
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="4" PTYPE="4" XPOS="166" YPOS="3410" WIDTH="480" HEIGHT="670" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" MinWordTrack="0.96" COLUMNS="2" COLGAP="30" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 670 480 670 480 670 480 670 0 670 0 670 0 670 0 670 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 670 480 670 480 670 480 670 0 670 0 670 0 670 0 670 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="20" BACKITEM="3">
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="4" XPOS="201" YPOS="121" WIDTH="408" HEIGHT="72" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 408 0 408 0 408 0 408 0 408 72 408 72 408 72 408 72 0 72 0 72 0 72 0 72 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 408 0 408 0 408 0 408 0 408 72 408 72 408 72 408 72 0 72 0 72 0 72 0 72 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Eurostile Regular" FONTSIZE="64" CH="Petrostat"/>
+            <trail ALIGN="1"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="0" PTYPE="2" XPOS="140" YPOS="195" WIDTH="531" HEIGHT="284" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.4" LOCALSCY="0.4" LOCALX="362.5" LOCALY="12.5" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="2" TEXTFLOW="1" TEXTFLOW2="1" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/war-for-oil.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 531 0 531 0 531 0 531 0 531 284 531 284 531 284 531 284 0 284 0 284 0 284 0 284 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 531 0 531 0 531 0 531 0 531 284 531 284 531 284 531 284 0 284 0 284 0 284 0 284 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="420" YPOS="2328" WIDTH="224" HEIGHT="70.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="3" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="1" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 224 0 224 0 224 0 224 0 224 70.5 224 70.5 224 70.5 224 70.5 0 70.5 0 70.5 0 70.5 0 70.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 224 0 224 0 224 0 224 0 224 70.5 224 70.5 224 70.5 224 70.5 0 70.5 0 70.5 0 70.5 0 70.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <breakline/>
+            <ITEXT CH="Tip: Speed up gameplay by maintaining a count of how many total public spending coins are on the board. Place a coin on the 0 box of the victory track at the beginning of the game. Whenever public spending is added or removed from  the game board, move the coin up or down the track accordingly."/>
+            <trail PARENT="Example Box"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="4" PTYPE="6" XPOS="126" YPOS="3506" WIDTH="228" HEIGHT="119" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="0" PCOLOR="None" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="Group3" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="1" groupsLastItem="2" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 228 0 228 0 228 0 228 0 228 119 228 119 228 119 228 119 0 119 0 119 0 119 0 119 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 228 0 228 0 228 0 228 0 228 119 228 119 228 119 228 119 0 119 0 119 0 119 0 119 0 0 0 0 " NUMGROUP="1" GROUPS="2 " startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="4" PTYPE="4" XPOS="738.5" YPOS="1842.5" WIDTH="227" HEIGHT="115" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="Magenta" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="3" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="1" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 227 0 227 0 227 0 227 0 227 115 227 115 227 115 227 115 0 115 0 115 0 115 0 115 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 227 0 227 0 227 0 227 0 227 115 227 115 227 115 227 115 0 115 0 115 0 115 0 115 0 0 0 0 " NUMGROUP="1" GROUPS="2 " startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0.5" gYpos="0.5" gWidth="228" gHeight="119" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT CH="When a population cube moves to the army box, it carries its accumulated wealth with it. Indicate this by stacking an equivalent amount of PC markers under its public spending. If it is returned to the population area, use the total number of coins to determine its position on the wealth track."/>
+            <trail PARENT="Example Box"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="4" PTYPE="2" XPOS="740" YPOS="1854" WIDTH="88" HEIGHT="107" RADRECT="0" FRTYPE="0" CLIPEDIT="1" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.0712550607287449" LOCALSCY="0.0712550607287449" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/Political Capital Under Spending under Army.JPG" PFILE2="" PFILE3="" PRFILE="Embedded sRGB IEC61966-2.1" EPROF="Embedded sRGB IEC61966-2.1" IRENDER="0" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 88 0 88 0 88 0 88 0 88 107 88 107 88 107 88 107 0 107 0 107 0 107 0 107 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 88 0 88 0 88 0 88 0 88 107 88 107 88 107 88 107 0 107 0 107 0 107 0 107 0 0 0 0 " NUMGROUP="1" GROUPS="2 " startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="2" gYpos="12" gWidth="228" gHeight="119" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="-1" PTYPE="2" XPOS="783" YPOS="2629.5" WIDTH="234" HEIGHT="84" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="30" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.263537906137184" LOCALSCY="0.263537906137184" LOCALX="37.9452054794521" LOCALY="18.972602739726" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/Subsidy Coins.JPG" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 234 0 234 0 234 0 234 0 234 84 234 84 234 84 234 84 0 84 0 84 0 84 0 84 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 234 0 234 0 234 0 234 0 234 84 234 84 234 84 234 84 0 84 0 84 0 84 0 84 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="4" PTYPE="2" XPOS="164" YPOS="3775" WIDTH="485" HEIGHT="319" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.72" LOCALSCY="0.72" LOCALX="4.1666666666661" LOCALY="4.16666666666669" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/Disgusting Oil Refiner.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 485 0 485 0 485 0 485 0 485 319 485 319 485 319 485 319 0 319 0 319 0 319 0 319 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 485 0 485 0 485 0 485 0 485 319 485 319 485 319 485 319 0 319 0 319 0 319 0 319 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="4" XPOS="165" YPOS="3143" WIDTH="222" HEIGHT="108.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="Black" COLUMNS="2" COLGAP="26" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Times New Roman Italic" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 222 0 222 0 222 0 222 0 222 108.5 222 108.5 222 108.5 222 108.5 0 108.5 0 108.5 0 108.5 0 108.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 222 0 222 0 222 0 222 0 222 108.5 222 108.5 222 108.5 222 108.5 0 108.5 0 108.5 0 108.5 0 108.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0.5" gYpos="0.5" gWidth="223" gHeight="98" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <ITEXT FONT="Times New Roman Italic" CH="Socialist aligned"/>
+            <breakline/>
+            <ITEXT FONT="Times New Roman Italic" CH="octobox marker (minority ethnicity)"/>
+            <para ALIGN="1"/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <breakline/>
+            <ITEXT FONT="Times New Roman Italic" CH="Majority Sectarian aligned cube marker (majority ethnicity)"/>
+            <trail ALIGN="1"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="196" YPOS="3148" WIDTH="41" HEIGHT="46" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.438095238095238" LOCALSCY="0.438095238095238" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/Minority.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 41 0 41 0 41 0 41 0 41 46 41 46 41 46 41 46 0 46 0 46 0 46 0 46 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 41 0 41 0 41 0 41 0 41 46 41 46 41 46 41 46 0 46 0 46 0 46 0 46 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="30.5" gYpos="5.5" gWidth="223" gHeight="98" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="2" XPOS="314" YPOS="3147" WIDTH="41" HEIGHT="46" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.442307692307692" LOCALSCY="0.442307692307692" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/Majority.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 41 0 41 0 41 0 41 0 41 46 41 46 41 46 41 46 0 46 0 46 0 46 0 46 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 41 0 41 0 41 0 41 0 41 46 41 46 41 46 41 46 0 46 0 46 0 46 0 46 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="148.5" gYpos="4.5" gWidth="223" gHeight="98" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="422" YPOS="2038" WIDTH="221.5" HEIGHT="85.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Times New Roman Italic" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="3" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="1" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 221.5 0 221.5 0 221.5 0 221.5 0 221.5 85.5 221.5 85.5 221.5 85.5 221.5 85.5 0 85.5 0 85.5 0 85.5 0 85.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 221.5 0 221.5 0 221.5 0 221.5 0 221.5 85.5 221.5 85.5 221.5 85.5 221.5 85.5 0 85.5 0 85.5 0 85.5 0 85.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <breakline/>
+            <ITEXT FONT="Times New Roman Italic" CH="Example: There are three tax markers on the board, so the governing player must take 15 total wealth from the population cubes. He moves a wealthy marker 10 spaces down the Population track, a middle class cube 2 spaces, and a working class marker 3 spaces. "/>
+            <trail PARENT="Default Paragraph Style" MinWordTrack="0.96"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="2" PTYPE="4" XPOS="168" YPOS="2251" WIDTH="224" HEIGHT="146.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Blue" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" IFONT="Times New Roman Italic" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="3" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="1" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 224 0 224 0 224 0 224 0 224 146.5 224 146.5 224 146.5 224 146.5 0 146.5 0 146.5 0 146.5 0 146.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 224 0 224 0 224 0 224 0 224 146.5 224 146.5 224 146.5 224 146.5 0 146.5 0 146.5 0 146.5 0 146.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <ITEXT FONT="Times New Roman Italic" CH="Example: The market performance for the 1940 turn was Recession. During the 1950 National Events phase, the roll (4d4) is a 16. There are 3 tax tokens, 1 war token, and 2 protest tokens on the gameboard, for a total modifier of -6. The modified result is a 10. On the outcome tables in the Recession box, 10 is listed as &quot;G&quot; (Growth). The market token is moved to the Growth box and the population cubes are moved on the wealth track according to the amounts marked next to &quot;G&quot; on the far right-hand side of the gameboard."/>
+            <trail PARENT="Default Paragraph Style" MinWordTrack="0.96"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="1" PTYPE="2" XPOS="421" YPOS="918" WIDTH="236" HEIGHT="118" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="0.543778801843318" LOCALSCY="0.543778801843318" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="0" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="1" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="../../Downloads/oil world.jpg" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="0" EMBEDDED="0" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 236 0 236 0 236 0 236 0 236 118 236 118 236 118 236 118 0 118 0 118 0 118 0 118 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 236 0 236 0 236 0 236 0 236 118 236 118 236 118 236 118 0 118 0 118 0 118 0 118 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <trail/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="3" PTYPE="4" XPOS="165" YPOS="2609" WIDTH="225.5" HEIGHT="31.5" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="Magenta" PCOLOR2="Black" COLUMNS="1" COLGAP="0" NAMEDLST="" SHADE="20" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="3" TEXTFLOW="1" TEXTFLOW2="0" TEXTFLOW3="1" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 225.5 0 225.5 0 225.5 0 225.5 0 225.5 31.5 225.5 31.5 225.5 31.5 225.5 31.5 0 31.5 0 31.5 0 31.5 0 31.5 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 225.5 0 225.5 0 225.5 0 225.5 0 225.5 31.5 225.5 31.5 225.5 31.5 225.5 31.5 0 31.5 0 31.5 0 31.5 0 31.5 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="-1">
+            <breakline/>
+            <ITEXT CH="Whenever the rules call for an uneven amount to be halved, round down."/>
+            <trail PARENT="Default Paragraph Style"/>
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+        <PAGEOBJECT OwnPage="5" PTYPE="4" XPOS="166" YPOS="4242" WIDTH="480" HEIGHT="670" RADRECT="0" FRTYPE="0" CLIPEDIT="0" PWIDTH="1" PCOLOR="None" PCOLOR2="None" MinWordTrack="0.96" COLUMNS="2" COLGAP="30" NAMEDLST="" SHADE="100" SHADE2="100" GRTYP="0" ROT="0" PLINEART="1" PLINEEND="0" PLINEJOIN="0" LOCALSCX="1" LOCALSCY="1" LOCALX="0" LOCALY="0" PICART="1" PLTSHOW="0" BASEOF="0" textPathType="0" textPathFlipped="0" FLIPPEDH="0" FLIPPEDV="0" SCALETYPE="1" RATIO="1" PRINTABLE="1" ANNOTATION="0" ANNAME="" TEXTFLOWMODE="0" TEXTFLOW="0" TEXTFLOW2="0" TEXTFLOW3="0" AUTOTEXT="0" EXTRA="0" TEXTRA="0" BEXTRA="0" REXTRA="0" FLOP="0" PFILE="" PFILE2="" PFILE3="" PRFILE="" EPROF="" IRENDER="1" EMBEDDED="1" LOCK="0" LOCKR="0" REVERS="0" TransValue="0" TransValueS="0" TransBlend="0" TransBlendS="0" isTableItem="0" TopLine="0" LeftLine="0" RightLine="0" BottomLine="0" isGroupControl="0" NUMDASH="0" DASHS="" DASHOFF="0" NUMPO="16" POCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 670 480 670 480 670 480 670 0 670 0 670 0 670 0 670 0 0 0 0 " NUMCO="16" COCOOR="0 0 0 0 480 0 480 0 480 0 480 0 480 670 480 670 480 670 480 670 0 670 0 670 0 670 0 670 0 0 0 0 " NUMGROUP="0" GROUPS="" startArrowIndex="0" endArrowIndex="0" OnMasterPage="" ImageClip="" ImageRes="1" Pagenumber="0" isInline="0" fillRule="1" doOverprint="0" gXpos="0" gYpos="0" gWidth="0" gHeight="0" LAYER="0" BOOKMARK="0" NEXTITEM="-1" BACKITEM="4">
+            <PageItemAttributes/>
+        </PAGEOBJECT>
+    </DOCUMENT>
+</SCRIBUSUTF8NEW>
