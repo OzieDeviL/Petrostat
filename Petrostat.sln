@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petrostat.Domain", "Petrostat.Domain\Petrostat.Domain.csproj", "{C4432572-7DA2-4558-8513-7DD0856A92AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{CA4FE99A-578C-4A52-BE1F-F28123E66E57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4432572-7DA2-4558-8513-7DD0856A92AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4432572-7DA2-4558-8513-7DD0856A92AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4432572-7DA2-4558-8513-7DD0856A92AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4432572-7DA2-4558-8513-7DD0856A92AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA4FE99A-578C-4A52-BE1F-F28123E66E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA4FE99A-578C-4A52-BE1F-F28123E66E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA4FE99A-578C-4A52-BE1F-F28123E66E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA4FE99A-578C-4A52-BE1F-F28123E66E57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDE54584-A1D9-4406-93C9-93FDA1EC471E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://oziedevil.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Petrostat.Domain\\Petrostat.Domain.csproj
+		SccProjectName1 = Petrostat.Domain
+		SccLocalPath1 = Petrostat.Domain
+		SccProjectUniqueName2 = ConsoleApp1\\ConsoleApp1.csproj
+		SccProjectName2 = ConsoleApp1
+		SccLocalPath2 = ConsoleApp1
+	EndGlobalSection
+EndGlobal
