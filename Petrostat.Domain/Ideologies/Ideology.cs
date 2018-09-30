@@ -26,8 +26,6 @@ namespace Petrostat.Domain.Ideologies
         public Victory Victory { get; }
 
         public abstract IdeologyName Name { get; }
-        public abstract Color Color { get; }
-        public abstract string Instruction { get; }
         public abstract string Inspiration { get; }
 
         public abstract void SetUp();

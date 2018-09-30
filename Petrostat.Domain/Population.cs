@@ -9,28 +9,26 @@ namespace Petrostat.Domain
 {
     public class Population
     {
-        public Population(EconomicClass economicClass
+        public Population(EconomicClass startingClass
             , IdeologyName alignment
             , bool isMajority = true)
         {
             Alignment = alignment;
             IsMajority = isMajority;
-            switch (economicClass)
+            switch (startingClass)
             {
                 case EconomicClass.Poor:
-                    Property = PetroRandom.Next(0, 45);
+                    Property = PetroLuck.Next(0, 45);
                     break;
                 case EconomicClass.WorkingClass:
-                    Property = PetroRandom.Next(6,14);
+                    Property = PetroLuck.Next(6,14);
                     break;
                 case EconomicClass.MiddleClass:
-                    Property = PetroRandom.Next(15, 29);
+                    Property = PetroLuck.Next(15, 29);
                     break;
                 case EconomicClass.Wealthy:
-                    Property = PetroRandom.Next(30, 44);
+                    Property = PetroLuck.Next(30, 44);
                     break;
-                case EconomicClass.None:
-                    throw new Exception("Population must be initialized with an Economic Class");
                 default:
                     break;
             }

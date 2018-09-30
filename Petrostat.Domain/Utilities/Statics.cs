@@ -7,6 +7,6 @@ namespace Petrostat.Domain.Utilities
     public static class StaticUtilities
     {
 
-        public static Random PetroRandom { get; }
+        public static Random PetroLuck { get; }
     }
 }

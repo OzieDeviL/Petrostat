@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Nation : INotifyPropertyChanged
+    public class Nation
     {
         public Nation(Game game)
         {
@@ -17,32 +17,21 @@ namespace Petrostat.Domain
 
         public Game Game { get; set; }
 
-        public HashSet<Population> Population { get; }
-        public HashSet<PoliticalParty> Parties { get; set; }
+        public HashSet<Population> Population   { get; }
+        public HashSet<PoliticalParty> Parties  { get; set; }
 
-        public int Treasury { get; set; }
-        public int Spending { get; set; }
-        public string MarketState { get; set; }
-        public int TaxBurden
-        {
-            get => TaxBurden;
-            set
-            {
-                if (value != TaxBurden)
-                {
-                    TaxBurden = value;
-                    OnPropertyChanged();
-                }
-            }
-        }
-        public int OilProduction { get; set; }
-        public int OilPrice { get; set; }
-        public bool PeakOil { get; set; }
-        public int ConflictCount { get; set; }
-        public int ProtestCount { get; set; }
-        public int ForeignPCAvailablePerRally { get; set; }
-        public int Power { get; set; }
-        public VictoryEvents NationalVictoryEvents {get;set;}
+        public int Treasury                         { get; set; }
+        public int Spending                         { get; set; }
+        public string MarketState                   { get; set; }
+        public int TaxBurden                        { get; set; }
+        public int OilProduction                    { get; set; }
+        public int OilPrice                         { get; set; }
+        public bool PeakOil                         { get; set; }
+        public int ConflictCount                    { get; set; }
+        public int ProtestCount                     { get; set; }
+        public int ForeignPCAvailablePerRally       { get; set; }
+        public int Power                            { get; set; }
+        public VictoryEvents NationalVictoryEvents  { get; set; }
 
         public void SetUp()
         {

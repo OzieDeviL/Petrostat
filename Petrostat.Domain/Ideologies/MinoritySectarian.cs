@@ -1,29 +1,28 @@
 ﻿using Petrostat.Domain.Enums;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Text;
+using static Petrostat.Domain.Utilities.StaticUtilities;
 
 namespace Petrostat.Domain.Ideologies
 {
     public class MinoritySectarian : Ideology
     {
-        #region Constructors
-        public MinoritySectarian() { }
-        public MinoritySectarian(Guid gameId)
-        {
-            GameId = gameId;
-        }
-
-        public MinoritySectarian(Game game) : base(game)
-        {
-        }
-        #endregion
+        public MinoritySectarian(Game game) : base(game, new MinoritySectarianVictory(game)) { }
 
         public override IdeologyName Name { get { return IdeologyName.MinoritySectarian; } }
-        public override Color Color { get { return Color.White; } }
-        public override decimal GameBalance { get { return 0m; } }
-        public override string Instruction { get { return "MinoritySectarian Instructions"; } }
-        public override string Inspiration { get { return "MinoritySectarian Inspiration"; } }
+        public override string Inspiration { get { return "Who built the roads? Who built the banks and the hospitals, the schools and the sewers? None of this was here before you. Protect what our people built!"; } }
+
+        public override void SetUp()
+        {
+            PoliticalCapital = 3;
+            Game.Nation.Population.Add(new Population(EconomicClass.Wealthy, IdeologyName.MinoritySectarian, false));
+            Game.Nation.Population.Add(new Population(EconomicClass.Wealthy, IdeologyName.MinoritySectarian, false));                                                                                          
+            Game.Nation.Population.Add(new Population(EconomicClass.Poor,    IdeologyName.MinoritySectarian, false));
+            var startingArmy = new Population(EconomicClass.None,            IdeologyName.MinoritySectarian, false);
+            startingArmy.IsArmy = true;
+            startingArmy.Property = PetroLuck.Next(2, 6);
+            startingArmy.PublicSpending = 3;
+            Game.Nation.Population.Add(startingArmy);
+        }
     }
 }

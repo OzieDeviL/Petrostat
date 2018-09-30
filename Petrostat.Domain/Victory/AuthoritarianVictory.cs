@@ -12,14 +12,16 @@ namespace Petrostat.Domain.Ideologies
         {
             get
             {
-                var score = StartingPoints
+                var points = StartingPoints
+                    + ImperialismPoints
                     + WarPoints
                     + NonGoverningGenocidePoints
                     + RepressionPoints
                     + ProtestPoints;
-                return score;
+                return points;
             }
         }
+        public override string Instructions => throw new NotImplementedException();
         public override int StartingPoints => 25;
         public int WarPoints => VictoryEvents.WarCount * 2 + VictoryEvents.TurnEndingsWithoutWarCount * 5;
         public int NonGoverningGenocidePoints => -15 * VictoryEvents.NonGoverningGenocideCount;

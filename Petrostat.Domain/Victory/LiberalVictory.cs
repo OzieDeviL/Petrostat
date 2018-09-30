@@ -12,24 +12,26 @@ namespace Petrostat.Domain.Ideologies
         {
             get
             {
-                var score = StartingPoints
+                var points = StartingPoints
+                    + ImperialismPoints
                     + TaxBurdenPoints
                     + GenocidePoints
                     + RepressionPoints
                     + CoupPoints
-                    + ElectionPoints
-                    + GlobalizationPoints;
+                    + ElectionPoints;
                 if (Nation.Game.IncludeNationalist)
                 {
-                    score += GlobalizationPoints;
+                    points += GlobalizationPoints;
                 }
                 if (Nation.Game.IncludeFundamentalist)
                 {
-                    score += UnwantedFundamentalismPoints;
+                    points += UnwantedFundamentalismPoints;
                 }
-                return score;
+                return points;
             }
         }
+        public override string Instructions => throw new NotImplementedException();
+
         public override int StartingPoints => 20;
         public int TaxBurdenPoints => -5 * Nation.TaxBurden;
         public int GenocidePoints => -15 * VictoryEvents.GenocideCount;
