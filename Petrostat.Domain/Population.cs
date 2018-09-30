@@ -1,26 +1,69 @@
-﻿using Petrostat.Domain.Ideologies;
+﻿using Petrostat.Domain.Enums;
+using Petrostat.Domain.Ideologies;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static Petrostat.Domain.Utilities.StaticUtilities;
 
 namespace Petrostat.Domain
 {
     public class Population
     {
-        public int Property { get; set; }
-        public int Spending { get; set; }
-        public int Wealth { get => Property + Spending; }
-        public bool IsPoor { get { if ((Wealth) <= 5) { return true; } else { return false; }; } }
-        public bool IsWorkingClass { get { if ((Wealth) > 5 && (Wealth) <= 15) { return true; } else { return false; }; } }
-        public bool IsMiddleClass { get { if ((Wealth) > 15 && (Wealth) <= 25) { return true; } else { return false; }; } }
-        public bool IsWealthy { get { if ((Wealth) > 25) { return true; } else { return false; }; } }
+        public Population(EconomicClass economicClass
+            , IdeologyName alignment
+            , bool isMajority = true)
+        {
+            Alignment = alignment;
+            IsMajority = isMajority;
+            switch (economicClass)
+            {
+                case EconomicClass.Poor:
+                    Property = PetroRandom.Next(0, 45);
+                    break;
+                case EconomicClass.WorkingClass:
+                    Property = PetroRandom.Next(6,14);
+                    break;
+                case EconomicClass.MiddleClass:
+                    Property = PetroRandom.Next(15, 29);
+                    break;
+                case EconomicClass.Wealthy:
+                    Property = PetroRandom.Next(30, 44);
+                    break;
+                case EconomicClass.None:
+                    throw new Exception("Population must be initialized with an Economic Class");
+                default:
+                    break;
+            }
+        }
+
+        public IdeologyName Alignment { get; set; }
         public bool IsMajority { get; set; }
-        public bool IsProtesting { get; set; }
+        public EconomicClass EconomicClass
+        {
+            get
+            {
+                if (IsArmy) return EconomicClass.None;
+                switch (Wealth)
+                {
+                    case int n when (n < 5):
+                        return EconomicClass.Poor;
+                    case int n when (n >= 5 && n < 15):
+                        return EconomicClass.WorkingClass;
+                    case int n when (n >= 15 && n < 30):
+                        return EconomicClass.MiddleClass;
+                    case int n when (n >= 30):
+                        return EconomicClass.Wealthy;
+                    default:
+                        return EconomicClass.None;
+                }
+            }
+        }
         public bool IsArmy { get; set; }
-        public bool TaxBurden { get; set; }
+        public int Property { get; set; }
+        public int PublicSpending { get; set; }
+        public int Wealth { get => Property + PublicSpending; }
+        public bool IsProtesting { get; set; }
         public bool UnderReligiousLaw { get; set; }
         public bool PropagandaBlocked { get; set; }
-        public Ideology Alignment { get; set; }
-
     }
 }

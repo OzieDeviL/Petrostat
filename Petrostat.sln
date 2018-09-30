@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Petrostat.Domain", "Petrostat.Domain\Petrostat.Domain.csproj", "{C4432572-7DA2-4558-8513-7DD0856A92AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Petrostat.Domain", "Petrostat.Domain\Petrostat.Domain.csproj", "{C4432572-7DA2-4558-8513-7DD0856A92AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{CA4FE99A-578C-4A52-BE1F-F28123E66E57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{CA4FE99A-578C-4A52-BE1F-F28123E66E57}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Instructions", "Instructions", "{0E422246-7EED-43DF-8847-AE4872D4E66B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Materials", "Materials", "{A51AE234-4443-4EF3-9869-FA331A35150E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scribus", "Scribus", "{CFBB7BDC-F5F3-4194-9636-224D30A4FED0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDFs", "PDFs", "{E6823D72-5CD1-4A07-B69E-F368FE52F29F}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{BD0633F1-C89D-43DD-AB3B-94819F85527E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDFs", "PDFs", "{F7C90710-68BD-4501-9CC2-288D9C4EED51}"
+	ProjectSection(SolutionItems) = preProject
+		Materials\PDFs\InstructionCards.pdf = Materials\PDFs\InstructionCards.pdf
+		Materials\PDFs\Petrostat Instruction Book Booklet 022115.pdf = Materials\PDFs\Petrostat Instruction Book Booklet 022115.pdf
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,24 +33,10 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7C90710-68BD-4501-9CC2-288D9C4EED51} = {A51AE234-4443-4EF3-9869-FA331A35150E}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EDE54584-A1D9-4406-93C9-93FDA1EC471E}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://oziedevil.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Petrostat.Domain\\Petrostat.Domain.csproj
-		SccProjectName1 = Petrostat.Domain
-		SccLocalPath1 = Petrostat.Domain
-		SccProjectUniqueName2 = ConsoleApp1\\ConsoleApp1.csproj
-		SccProjectName2 = ConsoleApp1
-		SccLocalPath2 = ConsoleApp1
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{CFBB7BDC-F5F3-4194-9636-224D30A4FED0} = {0E422246-7EED-43DF-8847-AE4872D4E66B}
-		{E6823D72-5CD1-4A07-B69E-F368FE52F29F} = {0E422246-7EED-43DF-8847-AE4872D4E66B}
-		{BD0633F1-C89D-43DD-AB3B-94819F85527E} = {0E422246-7EED-43DF-8847-AE4872D4E66B}
 	EndGlobalSection
 EndGlobal

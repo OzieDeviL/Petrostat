@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Petrostat.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
@@ -13,9 +14,13 @@ namespace Petrostat.Domain.Ideologies
         {
             GameId = gameId;
         }
+
+        public MinoritySectarian(Game game) : base(game)
+        {
+        }
         #endregion
 
-        public override string Name { get { return "MinoritySectarian"; } }
+        public override IdeologyName Name { get { return IdeologyName.MinoritySectarian; } }
         public override Color Color { get { return Color.White; } }
         public override decimal GameBalance { get { return 0m; } }
         public override string Instruction { get { return "MinoritySectarian Instructions"; } }

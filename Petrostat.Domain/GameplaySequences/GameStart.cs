@@ -32,21 +32,21 @@ namespace Petrostat.Domain.GameplaySequences
             game.PlayerGameSessions.AddRange(game.ActivePlayerGameSessions);
             
             //generate ideology instances
-            game.ActiveIdeologies = UIInputStartingIdeologies(game.Id, game.ActivePlayerGameSessions.Count);
+            game.Ideologies = UIInputStartingIdeologies(game.Id, game.ActivePlayerGameSessions.Count);
 
             //assign ideologies to playerSessions, based on UIInput
             //game.CurrentGameSessionIdeologies.Add(game.PlayerGameSessions[0], UIInputIdeologyAssignment(game.ActiveIdeologies, 0));
             //game.AllGameSessionIdeologies.Add(game.PlayerGameSessions[0], UIInputIdeologyAssignment(game.ActiveIdeologies, 0));
             #region Hardcode2
-            for (int i = 0; i < game.ActiveIdeologies.Count; i++)   //hardcode
+            for (int i = 0; i < game.Ideologies.Count; i++)   //hardcode
             {
                 game.CurrentGameSessionIdeologies.Add(
                                         game.ActivePlayerGameSessions[i]
-                                        , UIInputIdeologyAssignment(game.ActiveIdeologies, i)
+                                        , UIInputIdeologyAssignment(game.Ideologies, i)
                                         );
                 game.AllGameSessionIdeologies.Add(
                         game.ActivePlayerGameSessions[i]
-                        , UIInputIdeologyAssignment(game.ActiveIdeologies, i)
+                        , UIInputIdeologyAssignment(game.Ideologies, i)
                         );
             }
             #endregion Hardcode2

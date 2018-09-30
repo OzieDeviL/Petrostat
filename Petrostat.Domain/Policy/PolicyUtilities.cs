@@ -45,34 +45,34 @@ namespace Petrostat.Domain
             {
                 state += (int)PolicyFSM.AtLeastWealthPlusTreasury;
             }
-            if (ideology.ProtestingPopulaiton >= 3) { state += (int)PolicyFSM.AtLeast3PartyAlignedProtesters; }
-            if (nation.NationalPopulation.Count != nation.ProtestCount) { state += (int)PolicyFSM.AtLeast1NonProtestingPopulation; }
+            if (ideology.ProtestingPopulation >= 3) { state += (int)PolicyFSM.AtLeast3PartyAlignedProtesters; }
+            if (nation.Population.Count != nation.ProtestCount) { state += (int)PolicyFSM.AtLeast1NonProtestingPopulation; }
             if (nation.Treasury > 0) { state += (int)PolicyFSM.AtLeast1TreasuryProperty; }
             if (nation.Treasury >= 3) { state += (int)PolicyFSM.AtLeast3Treasury; }
             if (nation.Power < (int)ImperialismEnums.SuperPower) { state += (int)PolicyFSM.LessThan15ImperialismSpending; }
             if (nation.ProtestCount > 0) { state += (int)PolicyFSM.AtLeast1ProtestingPopulation; }
-            IEnumerable<Population> religiousPopulation = from population in nation.NationalPopulation
+            IEnumerable<Population> religiousPopulation = from population in nation.Population
                                                           where population.UnderReligiousLaw == true
                                                           select population;
-            if (nation.NationalPopulation.Count != religiousPopulation.Count())
+            if (nation.Population.Count != religiousPopulation.Count())
             {
                 state += (int)PolicyFSM.AtLeast1PopulationWithoutReligiousLaw;
             }
             //need to add states for at least 1 unaligned population of each economic class, need to learn LINQ to do that because I need where statements
-            IEnumerable<Population> poorPopulation = from population in nation.NationalPopulation
+            IEnumerable<Population> poorPopulation = from population in nation.Population
                                                      where population.IsPoor == true
                                                      select population;
-            IEnumerable<Population> alignedPoorPopulation = from population in nation.NationalPopulation
+            IEnumerable<Population> alignedPoorPopulation = from population in nation.Population
                                                      where population.IsPoor == true
                                                      select population;
 
-            IEnumerable<Population> workingClassPopulation = from population in nation.NationalPopulation
+            IEnumerable<Population> workingClassPopulation = from population in nation.Population
                                                      where population.IsPoor == true
                                                      select population;
-            IEnumerable<Population> middleClassPopulation = from population in nation.NationalPopulation
+            IEnumerable<Population> middleClassPopulation = from population in nation.Population
                                                      where population.IsPoor == true
                                                      select population;
-            IEnumerable<Population> wealthyPopulation = from population in nation.NationalPopulation
+            IEnumerable<Population> wealthyPopulation = from population in nation.Population
                                                      where population.IsPoor == true
                                                      select population;
 
