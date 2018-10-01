@@ -14,17 +14,14 @@ namespace Petrostat.Domain.Ideologies
             {
                 var points = StartingPoints
                     + ImperialismPoints
-                    + Enrichment
-                    + Impoverishment
-                    + Inequality;
+                    + ColonizationPenaltyPoints;
                 return points;
             }
         }
         public override string Instructions => throw new NotImplementedException();
-        public override int StartingPoints => 25;
-        public int Enrichment => (VictoryEvents.EnrichedToMiddleClass * 2) + VictoryEvents.EnrichedToWorkingClass;
-        public int Impoverishment => (-2 * VictoryEvents.ImpoverishedToWorkingClass) + (-3 * VictoryEvents.ImpoverishedToPoor);
-        public int Inequality => VictoryEvents.TurnEndingWithGoodMiddleToWorkingRatioCount - VictoryEvents.TurnEndingWithBadMiddleWorkingRatioCount - VictoryEvents.TurnEndingWithRichAndPoorCount;
-
+        public override int StartingPoints => 0;
+        public override int ImperialismPoints => (int)Game.Nation.Empire.Level;
+        public int ColonizationPenaltyPoints  =>   (+5 * Game.VictoryEvents.TurnEndingBonusCount) 
+                                                 + (-1 * Game.VictoryEvents.ForeignPCPenaltyCount);
     }
 }

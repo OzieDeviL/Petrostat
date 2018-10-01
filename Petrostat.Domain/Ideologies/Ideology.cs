@@ -9,20 +9,21 @@ namespace Petrostat.Domain.Ideologies
 {
     public abstract class Ideology
     {
+        protected readonly Game game;
+
         public Ideology(Game game, Victory victory)
         {
-            Game = game;
+            this.game = game;
             Victory = victory;
         }
 
-        public Game Game { get; }
-        public Nation Nation => Game.Nation;
+        public Nation nation => game.Nation;
         public int PoliticalCapital { get; set; }
         public bool IsGoverning { get; set; }
         public PoliticalParty PartyMembership { get; set; }
         public int ProtestingPopulation => AlignedPopulation.Where(p => p.IsProtesting).Count();
         public int AlignedPropertyTotal => AlignedPopulation.Sum(p => p.Property);
-        public HashSet<Population> AlignedPopulation { get => Game.Nation.Population.Where(p => p.Alignment == Name).ToHashSet(); }
+        public HashSet<Population> AlignedPopulation { get => game.Nation.Population.Where(p => p.Alignment == Name).ToHashSet(); }
         public Victory Victory { get; }
 
         public abstract IdeologyName Name { get; }

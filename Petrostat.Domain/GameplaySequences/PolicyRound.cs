@@ -39,35 +39,35 @@ namespace Petrostat.Domain.GameplaySequences
         //public Dictionary<Ideology, PolicyPlay> ChosenQuickPolicies { get; set; }
         //public Ideology CurrentPlayer { get; set; }
 
-        public void Sequence(Game game, Turn turn)
-        {
-            //choose policies or policy depending on QuickPlay Option
-            if (!game.Settings.QuickPlay)
-            {
-                //set all to waiting
-            //code
-            }
-                //get inputs
-                //flip flags to not waiting
-                //on last input, proceed to next round/phase
-            }
-            //} else
-            //{
-            //    //code
-            //}
-            ////UIInput
-            ////execute policies in turn order
+        //public void Sequence(Game game, Turn turn)
+        //{
+        //    //choose policies or policy depending on QuickPlay Option
+        //    if (!game.Settings.QuickPlay)
+        //    {
+        //        //set all to waiting
+        //    //code
+        //    }
+        //        //get inputs
+        //        //flip flags to not waiting
+        //        //on last input, proceed to next round/phase
+        //    }
+        //    //} else
+        //    //{
+        //    //    //code
+        //    //}
+        //    ////UIInput
+        //    ////execute policies in turn order
 
-        }
+        //}
 
-        private void UIInputPolicyChoice(Ideology ideology, Policy policy)
-        {
-            //server-side check that it's a valid policy to choose
-            //if (policy.RequiresArmy)
-            //{
+        //private void UIInputPolicyChoice(Ideology ideology, Policy policy)
+        //{
+        //    //server-side check that it's a valid policy to choose
+        //    //if (policy.RequiresArmy)
+        //    //{
                 
-            //}
-            //ChosenPolicies.Add(ideology, policy);
-        }
+        //    //}
+        //    //ChosenPolicies.Add(ideology, policy);
+        //}
     }
 }

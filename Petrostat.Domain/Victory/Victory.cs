@@ -21,7 +21,7 @@ namespace Petrostat.Domain.Ideologies
         #region Convenience References
         public Game Game { get; }
         public Nation Nation => Game.Nation;
-        public VictoryEvents VictoryEvents => Nation.NationalVictoryEvents;
+        public VictoryEvents VictoryEvents => Game.VictoryEvents;
         #endregion
     }
 }

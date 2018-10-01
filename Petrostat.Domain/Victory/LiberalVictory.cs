@@ -33,7 +33,7 @@ namespace Petrostat.Domain.Ideologies
         public override string Instructions => throw new NotImplementedException();
 
         public override int StartingPoints => 20;
-        public int TaxBurdenPoints => -5 * Nation.TaxBurden;
+        public int TaxBurdenPoints => -5 * Nation.Economy.TaxBurden;
         public int GenocidePoints => -15 * VictoryEvents.GenocideCount;
         public int RepressionPoints => VictoryEvents.RepressionFailureCount * 2 - VictoryEvents.RepressionSuccessCount;
         public int CoupPoints => VictoryEvents.CoupCount * -5;

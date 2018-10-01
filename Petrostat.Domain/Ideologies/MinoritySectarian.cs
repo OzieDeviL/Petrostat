@@ -15,14 +15,14 @@ namespace Petrostat.Domain.Ideologies
         public override void SetUp()
         {
             PoliticalCapital = 3;
-            Game.Nation.Population.Add(new Population(EconomicClass.Wealthy, IdeologyName.MinoritySectarian, false));
-            Game.Nation.Population.Add(new Population(EconomicClass.Wealthy, IdeologyName.MinoritySectarian, false));                                                                                          
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor,    IdeologyName.MinoritySectarian, false));
+            game.Nation.Population.Add(new Population(EconomicClass.Wealthy, IdeologyName.MinoritySectarian, false));
+            game.Nation.Population.Add(new Population(EconomicClass.Wealthy, IdeologyName.MinoritySectarian, false));                                                                                          
+            game.Nation.Population.Add(new Population(EconomicClass.Poor,    IdeologyName.MinoritySectarian, false));
             var startingArmy = new Population(EconomicClass.None,            IdeologyName.MinoritySectarian, false);
             startingArmy.IsArmy = true;
             startingArmy.Property = PetroLuck.Next(2, 6);
             startingArmy.PublicSpending = 3;
-            Game.Nation.Population.Add(startingArmy);
+            game.Nation.Population.Add(startingArmy);
         }
     }
 }

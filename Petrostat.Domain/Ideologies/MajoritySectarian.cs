@@ -11,11 +11,11 @@ namespace Petrostat.Domain.Ideologies
 
         public override void SetUp()
         {
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.MajoritySectarian));
         }
     }
 }

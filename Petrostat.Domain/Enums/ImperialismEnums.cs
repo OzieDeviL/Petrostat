@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Petrostat.Domain.Enums
 {
-    public enum ImperialismEnums
+    public enum EmpireLevel
     {
         ClientState = 0
-        , Independent = 3
-        , RegionalPower = 6
-        , WorldPower = 9
-        , SuperPower = 12
+        , Independent = 5
+        , RegionalPower = 10
+        , WorldPower = 15
+        , SuperPower = 20
     }
 }

@@ -12,7 +12,7 @@ namespace Petrostat.Domain
             Population = population;
             if (instigator.IsGoverning)
                 ByGovernment = true;
-            game.Nation.NationalVictoryEvents.Genocides.Add(this);
+            game.VictoryEvents.Genocides.Add(this);
         }
         public Population Population { get; set; }
         public bool ByGovernment { get; set; }

@@ -15,9 +15,9 @@ namespace Petrostat.Domain.Ideologies
             //get input to remove 2 poor markers
             //no two markers from the same player
             PoliticalCapital = 3;
-            Game.Nation.Population.Add(new Population(EconomicClass.MiddleClass, IdeologyName.Nationalist));
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.Nationalist));
-            Game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.Nationalist));
+            game.Nation.Population.Add(new Population(EconomicClass.MiddleClass, IdeologyName.Nationalist));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.Nationalist));
+            game.Nation.Population.Add(new Population(EconomicClass.Poor, IdeologyName.Nationalist));
         }
     }
 }

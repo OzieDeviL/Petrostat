@@ -16,7 +16,7 @@ namespace Petrostat.Domain
             Population = population;
             PreviousClass = previousClass;
             SubsequentClass = subsequentClass;
-            game.Nation.NationalVictoryEvents.ClassChanges.Add(this);
+            game.VictoryEvents.ClassChanges.Add(this);
             if (Impoverished) Realign();
         }
 

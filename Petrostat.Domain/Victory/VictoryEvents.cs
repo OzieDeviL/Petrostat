@@ -6,9 +6,14 @@ namespace Petrostat.Domain
 {
     public class VictoryEvents
     {
+        #region Convenience References
+        readonly Game game;
+        Nation nation => game.Nation;
+        #endregion
+
         public VictoryEvents (Game game)
         {
-            Game = game;
+            this.game = game;
             ClassChanges = new HashSet<ClassChange>();
             Genocides = new HashSet<Genocide>();
         }
@@ -33,7 +38,7 @@ namespace Petrostat.Domain
         public int CoupCount                    { get; set; }
         public int GlobalizationsAddedCount     { get; set; }
         public int GlobalizationsRemovedCount   { get; set; }
-        public int UnwantedFundamentalistCount => Nation.Population.Where(p => p.UnderReligiousLaw && p.Alignment != IdeologyName.Fundamentalist).Count();
+        public int UnwantedFundamentalistCount => nation.Population.Where(p => p.UnderReligiousLaw && p.Alignment != IdeologyName.Fundamentalist).Count();
 
         public int TurnEndingWithoutElectionCount { get; set; }
         #endregion
@@ -77,13 +82,43 @@ namespace Petrostat.Domain
         public int MinorityGenocidesCount                   => Genocides.Where(g => !g.Population.IsMajority).Count();
         #endregion
 
-        #region Fundamentalist
-        public int ReligiousLawCount => Nation.Population.Where(p => p.UnderReligiousLaw).Count();
+        #region Nationalist
+        public int ImperialismLevel
+        {
+            get
+            {
+                return (int)nation.Empire.Level;
+            }
+            set
+            {
+                if (value > TurnEndingBonusCount - ForeignPCPenaltyCount)
+                {
+                    ForeignPCPenaltyCount = 0;
+                    TurnEndingBonusCount = 0;
+                }
+                ImperialismLevel = value;
+            }
+        }
+        public int ForeignPCPenaltyCount
+        {
+            get
+            {
+                return ForeignPCPenaltyCount;
+            }
+            set
+            {
+                if ((TurnEndingBonusCount * 5) - value < (int)nation.Empire.Level)
+                    ForeignPCPenaltyCount = TurnEndingBonusCount * 5;
+                else
+                    ForeignPCPenaltyCount = value;
+            }
+        }
+        public int TurnEndingBonusCount { get; set; }
         #endregion
 
-        #region Convenience References
-        public Game Game { get; }
-        public Nation Nation => Game.Nation;
+        #region Fundamentalist
+        public int ReligiousLawCount => nation.Population.Where(p => p.UnderReligiousLaw).Count();
         #endregion
+
     }
 }

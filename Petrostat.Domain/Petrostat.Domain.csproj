@@ -11,4 +11,22 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="GameplaySequences\**" />
+    <Compile Remove="Policy\**" />
+    <EmbeddedResource Remove="GameplaySequences\**" />
+    <EmbeddedResource Remove="Policy\**" />
+    <None Remove="GameplaySequences\**" />
+    <None Remove="Policy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Players\Player.cs" />
+    <Compile Remove="Players\PlayerGameSession.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Players\" />
+  </ItemGroup>
+
 </Project>
