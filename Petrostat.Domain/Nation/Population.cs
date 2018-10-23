@@ -16,7 +16,13 @@ namespace Petrostat.Domain
             , bool isMajority = true)
         {
             Id = PetroLuck.Next();
-            Number = nation.Population.Max(p => p.Value.Number) + 1;
+            if (nation.Population.Any())
+            {
+                Number = nation.Population.Max(p => p.Value.Number) + 1;
+            } else
+            {
+                Number = 1;
+            }
             Alignment = alignment;
             IsMajority = isMajority;
             switch (startingClass)
@@ -25,7 +31,7 @@ namespace Petrostat.Domain
                     Property = PetroLuck.Next(0, 45);
                     break;
                 case EconomicClass.WorkingClass:
-                    Property = PetroLuck.Next(6,14);
+                    Property = PetroLuck.Next(6, 14);
                     break;
                 case EconomicClass.MiddleClass:
                     Property = PetroLuck.Next(15, 29);

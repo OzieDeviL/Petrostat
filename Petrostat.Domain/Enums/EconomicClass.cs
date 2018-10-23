@@ -4,7 +4,6 @@ using System.Text;
 
 namespace Petrostat.Domain.Enums
 {
-    [Flags]
     public enum EconomicClass
     {
         InvalidEconomicClass = 0

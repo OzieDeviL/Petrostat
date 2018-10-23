@@ -13,14 +13,14 @@ namespace Petrostat.Domain.Ideologies
         public override void SetUp()
         {
             PoliticalCapital = 3;
-            var newPopulation1 = new Population(EconomicClass.MiddleClass, Name, game.Nation, false);
-            Nation.Population.Add(newPopulation1.Id, newPopulation1);
-            var newPopulation2 = new Population(EconomicClass.WorkingClass, Name, game.Nation);
-            Nation.Population.Add(newPopulation2.Id, newPopulation2);
-            var newPopulation3 = new Population(EconomicClass.WorkingClass, Name, game.Nation);
-            Nation.Population.Add(newPopulation3.Id, newPopulation3);
-            var newPopulation4 = new Population(EconomicClass.Poor, Name, game.Nation);
-            Nation.Population.Add(newPopulation4.Id, newPopulation4);
+            var population = new Population(EconomicClass.MiddleClass, Name, game.Nation, false);
+            Nation.Population.Add(population.Id, population);
+            population = new Population(EconomicClass.WorkingClass, Name, game.Nation);
+            Nation.Population.Add(population.Id, population);
+            population = new Population(EconomicClass.WorkingClass, Name, game.Nation);
+            Nation.Population.Add(population.Id, population);
+            population = new Population(EconomicClass.Poor, Name, game.Nation);
+            Nation.Population.Add(population.Id, population);
         }
     }
 }

@@ -15,13 +15,12 @@ namespace Petrostat.Domain.Ideologies
             PoliticalCapital = 3;
             var population = new Population(EconomicClass.WorkingClass, Name, game.Nation);
             Nation.Population.Add(population.Id, population);
-            var population2 = new Population(EconomicClass.Poor, Name, game.Nation);
+            population = new Population(EconomicClass.Poor, Name, game.Nation);
             Nation.Population.Add(population.Id, population);
-            var population3 = new Population(EconomicClass.Poor, Name, game.Nation);
+            population = new Population(EconomicClass.Poor, Name, game.Nation);
             Nation.Population.Add(population.Id, population);
-            var population4 = new Population(EconomicClass.Poor, Name, game.Nation);
+            population = new Population(EconomicClass.Poor, Name, game.Nation);
             Nation.Population.Add(population.Id, population);
-            ////YOU NEED TO REDO THESE SETUPS SO THAT THE REFERENCE ISN'T GETTING CHANGED AROUND, SEE ANOTHER IDEOLOGY
         }
     }
 }
