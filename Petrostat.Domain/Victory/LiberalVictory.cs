@@ -19,11 +19,11 @@ namespace Petrostat.Domain.Ideologies
                     + RepressionPoints
                     + CoupPoints
                     + ElectionPoints;
-                if (Nation.Game.IncludeNationalist)
+                if (Nation.Game.IncludesNationalist)
                 {
                     points += GlobalizationPoints;
                 }
-                if (Nation.Game.IncludeFundamentalist)
+                if (Nation.Game.IncludesFundamentalist)
                 {
                     points += UnwantedFundamentalismPoints;
                 }
@@ -33,7 +33,7 @@ namespace Petrostat.Domain.Ideologies
         public override string Instructions => throw new NotImplementedException();
 
         public override int StartingPoints => 20;
-        public int TaxBurdenPoints => -5 * Nation.Economy.TaxBurden;
+        public int TaxBurdenPoints => -5 * Nation.Government.Taxes;
         public int GenocidePoints => -15 * VictoryEvents.GenocideCount;
         public int RepressionPoints => VictoryEvents.RepressionFailureCount * 2 - VictoryEvents.RepressionSuccessCount;
         public int CoupPoints => VictoryEvents.CoupCount * -5;

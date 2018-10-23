@@ -2,6 +2,7 @@
 using Petrostat.Domain.Ideologies;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using static Petrostat.Domain.Utilities.StaticUtilities;
 
@@ -11,8 +12,11 @@ namespace Petrostat.Domain
     {
         public Population(EconomicClass startingClass
             , IdeologyName alignment
+            , Nation nation
             , bool isMajority = true)
         {
+            Id = PetroLuck.Next();
+            Number = nation.Population.Max(p => p.Value.Number) + 1;
             Alignment = alignment;
             IsMajority = isMajority;
             switch (startingClass)
@@ -34,6 +38,8 @@ namespace Petrostat.Domain
             }
         }
 
+        public int Id { get; set; }
+        public int Number { get; }
         public IdeologyName Alignment { get; set; }
         public bool IsMajority { get; set; }
         public EconomicClass EconomicClass
@@ -61,7 +67,7 @@ namespace Petrostat.Domain
         public int PublicSpending { get; set; }
         public int Wealth { get => Property + PublicSpending; }
         public bool IsProtesting { get; set; }
-        public bool UnderReligiousLaw { get; set; }
+        public bool IsUnderReligiousLaw { get; set; }
         public bool PropagandaBlocked { get; set; }
     }
 }

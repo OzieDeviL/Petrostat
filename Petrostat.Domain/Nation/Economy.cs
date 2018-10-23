@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Petrostat.Domain.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -13,7 +14,8 @@ namespace Petrostat.Domain
             this.nation = nation;
         }
 
-        public int OilReserves { get; set; }
-        public int TaxBurden { get; set; }
+        public int OilReserves      { get; set; }
+        public OilPrice OilPrice    { get; set; }
+        public bool PeakOil         { get; set; }
     }
 }

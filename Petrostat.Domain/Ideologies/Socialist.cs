@@ -12,10 +12,14 @@ namespace Petrostat.Domain.Ideologies
         public override void SetUp()
         {
             PoliticalCapital = 3;
-            game.Nation.Population.Add(new Population(EconomicClass.WorkingClass,   IdeologyName.Socialist));
-            game.Nation.Population.Add(new Population(EconomicClass.Poor,           IdeologyName.Socialist));
-            game.Nation.Population.Add(new Population(EconomicClass.Poor,           IdeologyName.Socialist));
-            game.Nation.Population.Add(new Population(EconomicClass.Poor,           IdeologyName.Socialist));
+            var newPopulation = new Population(EconomicClass.WorkingClass, IdeologyName.Socialist, game.Nation);
+            game.Nation.Population.Add(newPopulation.Id, newPopulation);
+            newPopulation = new Population(EconomicClass.Poor, IdeologyName.Socialist, game.Nation);
+            game.Nation.Population.Add(newPopulation.Id, newPopulation);
+            newPopulation = new Population(EconomicClass.Poor, IdeologyName.Socialist, game.Nation);
+            game.Nation.Population.Add(newPopulation.Id, newPopulation);
+            newPopulation = new Population(EconomicClass.Poor, IdeologyName.Socialist, game.Nation);
+            game.Nation.Population.Add(newPopulation.Id, newPopulation);
         }
     }
 }

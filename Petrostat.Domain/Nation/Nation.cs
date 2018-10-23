@@ -14,15 +14,24 @@ namespace Petrostat.Domain
         public Nation(Game game)
         {
             Game = game;
-            Empire = new Empire(this);
+            Population = new Dictionary<int, Population>();
             Economy = new Economy(this);
+            Government = new Government();
+            if (Game.IncludesNationalist)
+            {
+                Empire = new Empire(this);
+            }
         }
 
-        public Game Game { get; set; }
-        public HashSet<Ideology> Ideologies { get; set; }
-        public HashSet<Population> Population   { get; }
-        public Empire Empire { get; }
-        public Economy Economy { get; }
+        public Game Game                                { get; }
+        public HashSet<Ideology> Ideologies             { get; set; }
+        public Dictionary<int, Population> Population   { get; }
+        public Empire Empire                            { get; }
+        public Economy Economy                          { get; }
+        public Government Government                    { get; }
+        public int Year => 1920 + Game.Turns.Count * 5;
+        public OilPrice OilPrice                        { get; set; }
+        public Market Market                            { get; set; }
         //public HashSet<PoliticalParty> Parties  { get; set; }
         //public int ConflictCount                    { get; set; }
         //public int ProtestCount                     { get; set; }
@@ -35,7 +44,7 @@ namespace Petrostat.Domain
         //public int ForeignPCAvailablePerRally       { get; set; }
         //public int Power                            { get; set; }
 
-        public void SetUp()
+        public void SetUp(Dictionary<IdeologyName, Player> playerChoices, Player initialGoverningPlayer)
         {
             Ideologies = new HashSet<Ideology>
             {
@@ -45,40 +54,65 @@ namespace Petrostat.Domain
                 new MinoritySectarian(Game),
                 new Socialist(Game)
             };
-            if (Game.IncludeNationalist)
-            {
-                Ideologies.Add(new Nationalist(Game));
-            }
-            if (Game.IncludeFundamentalist)
-            {
-                Ideologies.Add(new Fundamentalist(Game));
-            }
             foreach (var ideology in Ideologies)
             {
                 ideology.SetUp();
+                ideology.Player = playerChoices.Single(kv => kv.Key == ideology.Name).Value;
             }
-            
-            //OilProduction = 0;
-            //Treasury = 14;
-            //Spending = 0;
-            //PeakOil = false;
-            //MarketState = "Growth";
-            //ConflictCount = 0;
-            //ProtestCount = 0;
-            //ForeignPCAvailablePerRally = 0;
-            //Power = (int)ImperialismEnums.ClientState;
+            if (Game.IncludesNationalist || Game.IncludesFundamentalist)
+            {
+                ExpansionSetUp();
+            }
+            Government.Treaury = 14;
+            OilPrice = OilPrice.Medium;
+            Market = Market.Growth;
+            Government.Taxes = 1;
+        }
 
-            //PoliticalParty PeoplesPartyOfPertrostat = new PoliticalParty();
-            //PoliticalParty PetrostatiPeoplesParty = new PoliticalParty();
-            //PoliticalParty PartyOfPetrostatiPeople = new PoliticalParty();
-            //Parties.Add(PeoplesPartyOfPertrostat);
-            //Parties.Add(PetrostatiPeoplesParty);
-            //Parties.Add(PartyOfPetrostatiPeople);
-
-            //create new Population Cubes
-            //align Population Cubes
+        private void ExpansionSetUp()
+        {
+            var eligibleIdeologies = this.Ideologies
+                .Where(p => p.Name != IdeologyName.Nationalist && p.Name != IdeologyName.Fundamentalist)
+                .Select(i => i.Name)
+                .ToHashSet();
+            if (Game.IncludesNationalist)
+            {
+                var nationalist = new Nationalist(Game);
+                Ideologies.Add(nationalist);
+                eligibleIdeologies = nationalist.ExpansionSetUp(eligibleIdeologies);
+            }
+            eligibleIdeologies.Add(IdeologyName.Nationalist);
+            if (Game.IncludesFundamentalist)
+            {
+                var fundamentalist = new Fundamentalist(Game);
+                Ideologies.Add(fundamentalist);
+                fundamentalist.ExpansionSetUp(eligibleIdeologies);
+            }
         }
 
 
+
+        //OilProduction = 0;
+        //Treasury = 14;
+        //Spending = 0;
+        //PeakOil = false;
+        //MarketState = "Growth";
+        //ConflictCount = 0;
+        //ProtestCount = 0;
+        //ForeignPCAvailablePerRally = 0;
+        //Power = (int)ImperialismEnums.ClientState;
+
+        //PoliticalParty PeoplesPartyOfPertrostat = new PoliticalParty();
+        //PoliticalParty PetrostatiPeoplesParty = new PoliticalParty();
+        //PoliticalParty PartyOfPetrostatiPeople = new PoliticalParty();
+        //Parties.Add(PeoplesPartyOfPertrostat);
+        //Parties.Add(PetrostatiPeoplesParty);
+        //Parties.Add(PartyOfPetrostatiPeople);
+
+        //create new Population Cubes
+        //align Population Cubes
     }
+
+
 }
+

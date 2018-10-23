@@ -6,7 +6,7 @@ namespace Petrostat.Domain.Enums
 {
     public enum IdeologyName
     {
-        None = 0
+        InvalidIdeologyName = 0
             , Liberal = 1
             , Authoritarian = 2
             , MajoritySectarian = 3

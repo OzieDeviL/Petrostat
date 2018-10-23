@@ -22,10 +22,10 @@ namespace Petrostat.Domain
             }
             set
             {
-                if (value != 0 ||  value != 5 ||  value != 10 ||  value != 20)
+                if (value %5 == 0 && value <=0 && value <= 20)
                     Spending = value;
                 else
-                    throw new ArgumentOutOfRangeException("Spending on Imperialism must be increments of 5 exactly.");
+                    throw new ArgumentOutOfRangeException("Spending on Imperialism must be increments of 5 exactly (min: 0, max: 20).");
             }
         }
         public EmpireLevel Level => (EmpireLevel)Spending;

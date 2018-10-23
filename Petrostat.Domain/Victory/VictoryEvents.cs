@@ -38,7 +38,7 @@ namespace Petrostat.Domain
         public int CoupCount                    { get; set; }
         public int GlobalizationsAddedCount     { get; set; }
         public int GlobalizationsRemovedCount   { get; set; }
-        public int UnwantedFundamentalistCount => nation.Population.Where(p => p.UnderReligiousLaw && p.Alignment != IdeologyName.Fundamentalist).Count();
+        public int UnwantedFundamentalistCount => nation.Population.Where(p => p.Value.IsUnderReligiousLaw && p.Value.Alignment != IdeologyName.Fundamentalist).Count();
 
         public int TurnEndingWithoutElectionCount { get; set; }
         #endregion
@@ -117,7 +117,7 @@ namespace Petrostat.Domain
         #endregion
 
         #region Fundamentalist
-        public int ReligiousLawCount => nation.Population.Where(p => p.UnderReligiousLaw).Count();
+        public int ReligiousLawCount => nation.Population.Where(p => p.Value.IsUnderReligiousLaw).Count();
         #endregion
 
     }
