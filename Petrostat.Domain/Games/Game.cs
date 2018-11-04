@@ -4,6 +4,8 @@ using Petrostat.Domain.Ideologies;
 using Petrostat.Domain.Utilities;
 using System.Linq;
 using Petrostat.Domain.Enums;
+using Petrostat.Domain.Services;
+using Petrostat.Domain.Interfaces;
 
 namespace Petrostat.Domain
 {
@@ -22,12 +24,32 @@ namespace Petrostat.Domain
         public bool IncludesFundamentalist { get; private set; }
         public bool IncludesNationalist { get; private set; }
         public VictoryEvents VictoryEvents { get; set; }
-        public Player Player { get; set; }
         public HashSet<Player> Players { get; set; }
-        public IUIService UIService {get;}
-
+        public LinkedList<Ideology> TurnOrder { get; set; }
+        public IUIService UIService { get; }
+        public PlayerService PlayerService { get;}
 
         public void StartNewGame(HashSet<Player> players)
+        {
+            var Players = PlayerService.GetPlayersForNewGame();
+            if (Players.Count() < 7) { IncludesFundamentalist = false; }
+            if (Players.Count() < 6) { IncludesNationalist = false; }
+            var playerPriority = DeterminePlayerPriority(players);
+            var playerChoices = ChooseIdeologies(playerPriority);
+            UpdateTurnOrder(playerPriority);
+            Nation = new Nation(this);
+            Nation.SetUp(playerChoices);
+
+            VictoryEvents = new VictoryEvents(this);
+            Turns = new List<Turn>();
+
+            var turn1 = new Turn(this);
+            Turns.Add(turn1);
+            turn1.Start();
+        }
+
+
+        private SortedDictionary<int, Player> DeterminePlayerPriority(HashSet<Player> players)
         {
             var gasDays = new SortedDictionary<int, Player>();
             foreach (var player in players)
@@ -40,42 +62,58 @@ namespace Petrostat.Domain
                 gasDays.Add(gasDay, player);
             }
             gasDays.OrderByDescending(daysSinceGas => daysSinceGas.Key);
-            var availableIdeologies = new HashSet<IdeologyName>
-            {
-                IdeologyName.Liberal,
-                IdeologyName.Authoritarian,
-                IdeologyName.MajoritySectarian,
-                IdeologyName.MinoritySectarian,
-                IdeologyName.Socialist
-            };
-            if (Players.Count > 5)
-            {
-                IncludesNationalist = true;
-                availableIdeologies.Add(IdeologyName.Nationalist);
-            }
-            if (Players.Count > 6)
-            {
-                IncludesFundamentalist = true;
-                availableIdeologies.Add(IdeologyName.Fundamentalist);
-            }
-            var playerChoices = new Dictionary<IdeologyName, Player>();
-            foreach (var gasPlayer in gasDays)
-            {
-                UIService.DisplayOptions(availableIdeologies.ToList());
-                var choice = (IdeologyName)UIService.GetIntegerChoice($"Choose your ideology");
-                playerChoices.Add(choice, gasPlayer.Value);
-                availableIdeologies.Remove(choice);
-            }
-            gasDays.OrderBy(daysSinceGas => daysSinceGas.Key);
-            this.SetUp(playerChoices, gasDays.Single(kv => kv.Key == gasDays.Count/2).Value);
-            Turns = new List<Turn>();
+            return gasDays;
         }
 
-        private void SetUp(Dictionary<IdeologyName, Player> playerChoices, Player initialGoverningPlayer)
+        private Dictionary<IdeologyName, Player> ChooseIdeologies (SortedDictionary<int, Player> playerPriorities)
         {
-            Nation = new Nation(this);
-            Nation.SetUp(playerChoices, initialGoverningPlayer);
-            VictoryEvents = new VictoryEvents(this);
+            var orderedPlayerPriorities = playerPriorities.OrderByDescending(daysSinceGas => daysSinceGas.Key);
+
+            var choices = new Dictionary<IdeologyName, Player>();
+            foreach (IdeologyName ideology in Enum.GetValues(typeof(IdeologyName)))
+            {
+                choices.Add(ideology, null);
+            }
+            if (!IncludesFundamentalist)
+            {
+                choices.Remove(IdeologyName.Fundamentalist);
+            }
+            if (!IncludesNationalist)
+            {
+                choices.Remove(IdeologyName.Nationalist);
+            }
+
+            foreach (var player in orderedPlayerPriorities)
+            {
+                UIService.DisplayOptions(choices.ToList());
+                var choice = (IdeologyName)UIService.GetIntegerChoice($"Choose your ideology");
+                choices[choice] = player.Value;
+                this.Nation.Ideologies.Single(i => i.Name == choice).Player = player.Value;
+                choices.Remove(choice);
+            }
+            return choices;
+        }
+
+        public void UpdateTurnOrder(SortedDictionary<int, Player> playerPriorities)
+        {
+            var orderedPlayerPriorities = playerPriorities.OrderBy(daysSinceGas => daysSinceGas.Key);
+            var node = new LinkedListNode<Ideology>(Nation.Ideologies.Single(i => i.Player.Id == orderedPlayerPriorities.First().Value.Id));
+            foreach (var player in orderedPlayerPriorities)
+            {
+                if (TurnOrder == null)
+                {
+                    TurnOrder = new LinkedList<Ideology>();
+                    TurnOrder.AddFirst(node);
+                }
+                else if (player.Value.Id != orderedPlayerPriorities.Last().Value.Id)
+                {
+                    node = TurnOrder.AddAfter(node, Nation.Ideologies.Single(i => i.Player.Id == player.Value.Id));
+                } else
+                {
+                    TurnOrder.AddLast(Nation.Ideologies.Single(i => i.Player.Id == player.Value.Id));
+                }
+            }
+            throw new NotImplementedException();
         }
     }
 }

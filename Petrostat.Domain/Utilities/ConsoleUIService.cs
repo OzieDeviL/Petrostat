@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using static System.Console;
+using Petrostat.Domain.Interfaces;
 
 namespace Petrostat.Domain.Utilities
 {

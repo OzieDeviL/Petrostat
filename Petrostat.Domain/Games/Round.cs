@@ -6,6 +6,13 @@ namespace Petrostat.Domain
 {
     public class Round
     {
+        private readonly Game _game;
+
+        public Round (Game game)
+        {
+            _game = game;
+        }
+
         public int Id { get; set; }
         public string DisplayNumber { get; set; }
         public int PhaseOrder { get; set; }
@@ -14,16 +21,16 @@ namespace Petrostat.Domain
 
         public void Start()
         {
-            OpenPhaseCheck();
+            OpenRoundCheck();
             PlayersChoosePolicies();
         }
 
         private void PlayersChoosePolicies()
         {
-            throw new NotImplementedException();
+            foreach (_game.Nation.Ideologies)
         }
 
-        public void OpenPhaseCheck()
+        public void OpenRoundCheck()
         {
             if (IsFinished)
             {

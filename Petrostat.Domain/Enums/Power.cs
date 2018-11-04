@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Petrostat.Domain.Enums
 {
-    public enum EmpireLevel
+    public enum Power
     {
         ClientState = 0
         , Independent = 5

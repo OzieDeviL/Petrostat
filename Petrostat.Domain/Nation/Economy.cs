@@ -17,5 +17,6 @@ namespace Petrostat.Domain
         public int OilReserves      { get; set; }
         public OilPrice OilPrice    { get; set; }
         public bool PeakOil         { get; set; }
+        public Market Market { get; set; }
     }
 }

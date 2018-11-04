@@ -11,108 +11,80 @@ namespace Petrostat.Domain
 {
     public class Nation
     {
+        private readonly Game _game;    
+
         public Nation(Game game)
         {
-            Game = game;
-            Population = new Dictionary<int, Population>();
-            Economy = new Economy(this);
-            Government = new Government();
-            if (Game.IncludesNationalist)
-            {
-                Empire = new Empire(this);
-            }
+            _game = game;
         }
 
-        public Game Game                                { get; }
         public HashSet<Ideology> Ideologies             { get; set; }
-        public Dictionary<int, Population> Population   { get; }
-        public Empire Empire                            { get; }
-        public Economy Economy                          { get; }
-        public Government Government                    { get; }
-        public int Year => 1920 + Game.Turns.Count * 5;
-        public OilPrice OilPrice                        { get; set; }
-        public Market Market                            { get; set; }
-        //public HashSet<PoliticalParty> Parties  { get; set; }
-        //public int ConflictCount                    { get; set; }
-        //public int ProtestCount                     { get; set; }
-        //public int Treasury                         { get; set; }
-        //public int Spending                         { get; set; }
-        //public string MarketState                   { get; set; }
-        //public int OilProduction                    { get; set; }
-        //public int OilPrice                         { get; set; }
-        //public bool PeakOil                         { get; set; }
-        //public int ForeignPCAvailablePerRally       { get; set; }
-        //public int Power                            { get; set; }
+        public Dictionary<int, Population> Population   { get; private set; }
+        public Empire Empire                            { get; private set; }
+        public Economy Economy                          { get; private set; }
+        public Government Government                    { get; private set; }
+        public Military Military                        { get; private set; }
+        public int Year => 1920 + _game.Turns.Count * 5;
 
-        public void SetUp(Dictionary<IdeologyName, Player> playerChoices, Player initialGoverningPlayer)
+        public void SetUp(Dictionary<IdeologyName, Player> playerChoices)
         {
             Ideologies = new HashSet<Ideology>
             {
-                new Authoritarian(Game),
-                new Liberal(Game),
-                new MajoritySectarian(Game),
-                new MinoritySectarian(Game),
-                new Socialist(Game)
+                new Authoritarian(_game),
+                new Liberal(_game),
+                new MajoritySectarian(_game),
+                new MinoritySectarian(_game),
+                new Socialist(_game)
             };
             foreach (var ideology in Ideologies)
             {
                 ideology.SetUp();
                 ideology.Player = playerChoices.Single(kv => kv.Key == ideology.Name).Value;
             }
-            if (Game.IncludesNationalist || Game.IncludesFundamentalist)
+            Population = new Dictionary<int, Population>();
+            Economy = new Economy(this)
+            {
+                OilPrice = OilPrice.Medium,
+                Market = Market.Growth
+            };
+            Government = new Government(_game)
+            {
+                Taxes = 1,
+                Treaury = 14
+            };
+            Government.SetUp();
+            Military = new Military(_game);
+            if (_game.IncludesNationalist || _game.IncludesFundamentalist)
             {
                 ExpansionSetUp();
             }
-            Government.Treaury = 14;
-            OilPrice = OilPrice.Medium;
-            Market = Market.Growth;
-            Government.Taxes = 1;
+
         }
 
         private void ExpansionSetUp()
         {
+            if (_game.IncludesNationalist)
+            {
+                Empire = new Empire(this);
+            }
             var eligibleIdeologies = this.Ideologies
                 .Where(p => p.Name != IdeologyName.Nationalist && p.Name != IdeologyName.Fundamentalist)
                 .Select(i => i.Name)
                 .ToHashSet();
-            if (Game.IncludesNationalist)
+            if (_game.IncludesNationalist)
             {
-                var nationalist = new Nationalist(Game);
+                var nationalist = new Nationalist(_game);
                 Ideologies.Add(nationalist);
                 eligibleIdeologies = nationalist.ExpansionSetUp(eligibleIdeologies);
             }
             eligibleIdeologies.Add(IdeologyName.Nationalist);
-            if (Game.IncludesFundamentalist)
+            if (_game.IncludesFundamentalist)
             {
-                var fundamentalist = new Fundamentalist(Game);
+                var fundamentalist = new Fundamentalist(_game);
                 Ideologies.Add(fundamentalist);
                 fundamentalist.ExpansionSetUp(eligibleIdeologies);
             }
         }
-
-
-
-        //OilProduction = 0;
-        //Treasury = 14;
-        //Spending = 0;
-        //PeakOil = false;
-        //MarketState = "Growth";
-        //ConflictCount = 0;
-        //ProtestCount = 0;
-        //ForeignPCAvailablePerRally = 0;
-        //Power = (int)ImperialismEnums.ClientState;
-
-        //PoliticalParty PeoplesPartyOfPertrostat = new PoliticalParty();
-        //PoliticalParty PetrostatiPeoplesParty = new PoliticalParty();
-        //PoliticalParty PartyOfPetrostatiPeople = new PoliticalParty();
-        //Parties.Add(PeoplesPartyOfPertrostat);
-        //Parties.Add(PetrostatiPeoplesParty);
-        //Parties.Add(PartyOfPetrostatiPeople);
-
-        //create new Population Cubes
-        //align Population Cubes
     }
-
-
 }
 
