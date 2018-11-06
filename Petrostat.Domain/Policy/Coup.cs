@@ -20,14 +20,14 @@ namespace Petrostat.Domain
                 List<int> requirementsEnums = new List<int>
                 {
                     //use army
-                    (int)PolicyFSM.BeInNonGoverningParty
-                  + (int)PolicyFSM.HaveArmy
-                  + (int)PolicyFSM.AtLeast3PC
+                    (int)PolicyRequirement.BeInNonGoverningParty
+                  + (int)PolicyRequirement.HaveArmy
+                  + (int)PolicyRequirement.AtLeast3PC
                     //use protest
-                  , (int)PolicyFSM.AtLeast3PC
-                  + (int)PolicyFSM.BeInNonGoverningParty
-                  + (int)PolicyFSM.AtLeast1AlignedProtester
-                  + (int)PolicyFSM.AtLeast3PartyAlignedProtesters
+                  , (int)PolicyRequirement.AtLeast3PC
+                  + (int)PolicyRequirement.BeInNonGoverningParty
+                  + (int)PolicyRequirement.AtLeast1AlignedProtester
+                  + (int)PolicyRequirement.AtLeast3PartyAlignedProtesters
                 };
                 return requirementsEnums;
             }

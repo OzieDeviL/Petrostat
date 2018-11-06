@@ -5,7 +5,7 @@ using System.Text;
 namespace Petrostat.Domain.Enums
 {
     [Flags]
-    enum Policies
+    public enum PolicyName
     {
         None = 0
             , Rally = 1

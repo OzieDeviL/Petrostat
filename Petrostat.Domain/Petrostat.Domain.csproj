@@ -13,11 +13,8 @@
 
   <ItemGroup>
     <Compile Remove="GameplaySequences\**" />
-    <Compile Remove="Policy\**" />
     <EmbeddedResource Remove="GameplaySequences\**" />
-    <EmbeddedResource Remove="Policy\**" />
     <None Remove="GameplaySequences\**" />
-    <None Remove="Policy\**" />
   </ItemGroup>
 
   <ItemGroup>

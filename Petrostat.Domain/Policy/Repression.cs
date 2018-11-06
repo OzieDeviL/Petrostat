@@ -16,11 +16,11 @@ namespace Petrostat.Domain.Ideologies
             {
                 List<int> requirementsEnums = new List<int>
                 {
-                    (int)PolicyFSM.AtLeast2PC
-                  + (int)PolicyFSM.HaveArmy
-                  + (int)PolicyFSM.Governing
-                  + (int)PolicyFSM.AtLeast1ProtestingPopulation
-                  + (int)PolicyFSM.TargetPopulationsProtesting
+                    (int)PolicyRequirement.AtLeast2PC
+                  + (int)PolicyRequirement.HaveArmy
+                  + (int)PolicyRequirement.Governing
+                  + (int)PolicyRequirement.AtLeast1ProtestingPopulation
+                  + (int)PolicyRequirement.TargetPopulationsProtesting
                 };
                 return requirementsEnums;
             }

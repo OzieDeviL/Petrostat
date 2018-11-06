@@ -7,20 +7,20 @@ namespace Petrostat.Domain
 {
     public class Turn
     {
-        Game game;
+        private readonly Game _game;
 
         public Turn(Game game)
         {   
-            this.game = game;
+            _game = game;
         }
 
         public void Start()
         {
             OpenTurnCheck();
-            Number = game.Turns?.Count() ?? 0;
-            game.Turns.Add(this);
-            game.CurrentTurn = this;
-            Rounds = new List<Round> { new Round() };
+            Number = _game.Turns?.Count() ?? 0;
+            _game.Turns.Add(this);
+            _game.CurrentTurn = this;
+            Rounds = new List<Round> { new Round(_game) };
             CurrentRound.Start();
         }
         
@@ -37,15 +37,5 @@ namespace Petrostat.Domain
                 throw new Exception($"Turn {Number} (displayed as turn {DisplayNumber}) has already been finished.");
             }
         }
-        
-        //public bool AllPlayersWin { get; set; }
-
-        //public void Sequence(Game game)
-        //{
-        //    PolicyRound policyRound = new PolicyRound(this.Id);
-        //    policyRound.Sequence(game);
-        //    NationalEventsRound nationalEventsRound = new NationalEventsRound();
-        //    nationalEventsRound.Sequence();
-        //}
     }
 }

@@ -48,13 +48,12 @@ namespace Petrostat.Domain
             turn1.Start();
         }
 
-
         private SortedDictionary<int, Player> DeterminePlayerPriority(HashSet<Player> players)
         {
             var gasDays = new SortedDictionary<int, Player>();
             foreach (var player in players)
             {
-                var gasDay = UIService.GetIntegerChoice($"{player.Name}, how many days has it been since you bought gasoline?", min: 0);
+                var gasDay = UIService.GetIntegerChoice(player, $"{player.Name}, how many days has it been since you bought gasoline?", min: 0);
                 if (gasDays.ContainsKey(gasDay))
                 {
                     gasDay++;
@@ -83,12 +82,12 @@ namespace Petrostat.Domain
                 choices.Remove(IdeologyName.Nationalist);
             }
 
-            foreach (var player in orderedPlayerPriorities)
+            foreach (var player in orderedPlayerPriorities.Select(kv => kv.Value))
             {
                 UIService.DisplayOptions(choices.ToList());
-                var choice = (IdeologyName)UIService.GetIntegerChoice($"Choose your ideology");
-                choices[choice] = player.Value;
-                this.Nation.Ideologies.Single(i => i.Name == choice).Player = player.Value;
+                var choice = (IdeologyName)UIService.GetIntegerChoice(player, $"Choose your ideology");
+                choices[choice] = player;
+                this.Nation.Ideologies.Single(i => i.Name == choice).Player = player;
                 choices.Remove(choice);
             }
             return choices;

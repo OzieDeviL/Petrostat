@@ -5,7 +5,7 @@ using System.Text;
 namespace Petrostat.Domain.Enums
 {
     [Flags]
-    public enum PolicyFSM
+    public enum PolicyRequirement
     {
         None = 0
             , HaveArmy = 1 //Coup, Repression, ResistCoup, ResistRepression, ResistGenocide
@@ -14,7 +14,7 @@ namespace Petrostat.Domain.Enums
             , AtLeast2PC = 1 << 3 //Working-class propaganda 
             , AtLeast3PC = 1 << 4 //Middle-class Propaganda
             , AtLeast4PC = 1 << 5 //Wealthy Propaganda
-            , AtLeastWealthPlusTreasury = 1 << 6 //Army
+            , AtLeast3WealthPlusTreasury = 1 << 6 //Army
             , AtLeast3PartyAlignedProtesters = 1 << 7 //Coup
             , AtLeast1NonProtestingPopulation = 1 << 8 //Protest
             , AtLeast1Treasury = 1 << 9 //Social Spending
@@ -55,6 +55,5 @@ namespace Petrostat.Domain.Enums
             , TargetPopulationNotProtesting = 1 << 44
             , NewTaxBurdenOnTargetPopulationsLessThanProperty = 1 << 45
             , TaxTargetsNotArmy = 1 << 46
-
     }
 }

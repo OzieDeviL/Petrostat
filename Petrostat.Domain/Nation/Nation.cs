@@ -58,7 +58,6 @@ namespace Petrostat.Domain
             {
                 ExpansionSetUp();
             }
-
         }
 
         private void ExpansionSetUp()
