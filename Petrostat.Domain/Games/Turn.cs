@@ -17,7 +17,7 @@ namespace Petrostat.Domain
         public void Start()
         {
             OpenTurnCheck();
-            Number = _game.Turns?.Count() ?? 0;
+            Number = _game.Turns?.Count ?? 0;
             _game.Turns.Add(this);
             _game.CurrentTurn = this;
             Rounds = new List<Round> { new Round(_game) };

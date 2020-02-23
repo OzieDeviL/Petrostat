@@ -28,7 +28,7 @@ namespace Petrostat.Domain
                     throw new ArgumentOutOfRangeException("Spending on Imperialism must be increments of 5 exactly (min: 0, max: 20).");
             }
         }
-        public Power Level => (Power)Spending;
+        public ImperialPower Level => (ImperialPower)Spending;
         public int ForeignPCAvailable
         {
             get

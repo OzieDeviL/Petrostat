@@ -3,41 +3,33 @@ using Petrostat.Domain.Ideologies;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Petrostat.Domain
 {
-    public abstract class Policy
+    internal abstract class PolicyChoice
     {
-        private readonly Game _game;
+        protected readonly Nation _nation;
 
-        public Policy(Game game)
-        {
-            _game = game;
+        public PolicyChoice(Nation nation) {
+            _nation = nation;
         }
+        public PolicyChoice() {}
 
         public abstract PolicyName Name { get; }
         public abstract string Description { get; }
-        //TODO public abstract string FlavorText { get; }
-        public HashSet<PolicyRequirement> Requirements { get; protected set; }
-        public PolicyRequirement MinimumRequirement
-        {
-            get
-            {
-                var minimumRequiredState = PolicyRequirement.None;
-                foreach (var requirement in Requirements)
-                {
-                    minimumRequiredState = minimumRequiredState | requirement;
-                }
-                return minimumRequiredState;
-            }
+        public bool CanBePlayed(Ideology ideology, Population targetPopulation = null)
+        {   
+            var currentQualifications = DetermineCurrentQualifications(ideology, targetPopulation);
+            var canBePlayed = MinimumRequirementCombinations.Any(minimumRequirementCombination => 
+                minimumRequirementCombination == (minimumRequirementCombination & currentQualifications));
+            return canBePlayed;
         }
-
-        public virtual bool Validate(Ideology ideology, Population targetPopulation)
-        {
-            var qualifications = DetermineQualifications(ideology, targetPopulation);
-            return (qualifications & MinimumRequirement) == MinimumRequirement;
-        }
-
-        protected abstract PolicyRequirement DetermineQualifications(Ideology ideology, Population targetPopulation);
+        public abstract void Play();        
+        protected abstract List<PolicyRequirement> MinimumRequirementCombinations { get; }
+        protected abstract PolicyRequirement DetermineCurrentQualifications(Ideology ideology, Population targetPopulation = null);
+        protected abstract bool IsSuccess();
+        protected abstract void OnSuccess();
+        protected abstract void OnFailure();
     }
 }

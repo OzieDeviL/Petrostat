@@ -3,25 +3,21 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using static Petrostat.Domain.PolicyQualificationHelpers;
+using System.Linq;
 
 namespace Petrostat.Domain.Ideologies
 {
-    internal class ImperialismIncrease : PolicyChoice
+    internal class ArmyMobilize : PolicyChoice
     {
-        private readonly ImperialPower _imperialPower;
-        private readonly int _treasury;
 
-        public ImperialismIncrease(ImperialPower imperialPower, int treasury) {
-            _imperialPower = imperialPower;
-            _treasury = treasury;
-        }
+        public override PolicyName Name { get => PolicyName.ArmyMobilize; }
 
-        public override PolicyName Name { get => PolicyName.ImperialismIncrease; }
         public override void Play()
         {
             throw new NotImplementedException();
         }
-        public override string Description => "Spend 3 from the the treasury to move to the next highest position on the imperialism track. Move the imperialism marker to the corresponding position.";
+
+        public override string Description => "Move one marker aligned with your ideology to or from the army box. If moving to the army box, subtract 3 wealth from your aligned cubes—the governing player may spend from the treasury—then stack three spending under the army along with a stack of wealth (red­side down coins) equal to the marker's position on the wealth track.";
 
         protected override List<PolicyRequirement> MinimumRequirementCombinations
         {
@@ -30,9 +26,8 @@ namespace Petrostat.Domain.Ideologies
                 var requirementsEnums = new List<PolicyRequirement>
                 {
                         PolicyRequirement.AtLeast2PC
-                    |   PolicyRequirement.AtLeast3Treasury
-                    |   PolicyRequirement.Governing
-                    |   PolicyRequirement.NotSuperPower
+                    |   PolicyRequirement.AtLeast1AlignedNonArmyCube
+                    |   PolicyRequirement.AtLeast3AlignedWealth
                 };
                 return requirementsEnums;
             }
@@ -41,12 +36,9 @@ namespace Petrostat.Domain.Ideologies
         protected override PolicyRequirement DetermineCurrentQualifications(Ideology ideology, Population targetPopulation = null)
         {
             var qualifications = PolicyRequirement.None;
-            
             qualifications |= ideology.PoliticalCapital >= 2 ? PolicyRequirement.AtLeast2PC : PolicyRequirement.None;
-            qualifications |= _treasury >= 3 ? PolicyRequirement.AtLeast3Treasury : PolicyRequirement.None;
-            qualifications |= IsGoverningIdeology(ideology) ? PolicyRequirement.Governing : PolicyRequirement.None;
-            qualifications |= _imperialPower != ImperialPower.SuperPower ? PolicyRequirement.NotSuperPower : PolicyRequirement.None;
-            
+            qualifications |= ideology.AlignedPopulation.Any(kv => !kv.Value.IsArmy) ? PolicyRequirement.AtLeast1AlignedNonArmyCube : PolicyRequirement.None;
+            qualifications |= IdeologyWealth(ideology) >= 3 ? PolicyRequirement.AtLeast3AlignedWealth : PolicyRequirement.None;
             return qualifications;
         }
 

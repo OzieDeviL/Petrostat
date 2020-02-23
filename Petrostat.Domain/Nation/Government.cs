@@ -58,7 +58,7 @@ namespace Petrostat.Domain
 
         public void SwitchIdeology(PoliticalParty targetParty, Ideology ideology)
         {
-            var originalParty = ideology.PartyMembership;
+            var originalParty = ideology.CurrentParty;
             originalParty.RemoveIdeology(ideology);
             targetParty.AddIdeology(ideology);
         }

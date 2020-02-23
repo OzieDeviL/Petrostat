@@ -6,22 +6,14 @@ using static Petrostat.Domain.PolicyQualificationHelpers;
 
 namespace Petrostat.Domain.Ideologies
 {
-    internal class ImperialismIncrease : PolicyChoice
+    internal class GlobalizationIncrease : PolicyChoice
     {
-        private readonly ImperialPower _imperialPower;
-        private readonly int _treasury;
-
-        public ImperialismIncrease(ImperialPower imperialPower, int treasury) {
-            _imperialPower = imperialPower;
-            _treasury = treasury;
-        }
-
-        public override PolicyName Name { get => PolicyName.ImperialismIncrease; }
+             public override PolicyName Name { get => PolicyName.GlobalizationIncrease; }
         public override void Play()
         {
             throw new NotImplementedException();
         }
-        public override string Description => "Spend 3 from the the treasury to move to the next highest position on the imperialism track. Move the imperialism marker to the corresponding position.";
+        public override string Description => "Add or remove 1 globalization token to or from the Market area of the gameboard.";
 
         protected override List<PolicyRequirement> MinimumRequirementCombinations
         {
@@ -30,9 +22,7 @@ namespace Petrostat.Domain.Ideologies
                 var requirementsEnums = new List<PolicyRequirement>
                 {
                         PolicyRequirement.AtLeast2PC
-                    |   PolicyRequirement.AtLeast3Treasury
                     |   PolicyRequirement.Governing
-                    |   PolicyRequirement.NotSuperPower
                 };
                 return requirementsEnums;
             }
@@ -41,12 +31,8 @@ namespace Petrostat.Domain.Ideologies
         protected override PolicyRequirement DetermineCurrentQualifications(Ideology ideology, Population targetPopulation = null)
         {
             var qualifications = PolicyRequirement.None;
-            
             qualifications |= ideology.PoliticalCapital >= 2 ? PolicyRequirement.AtLeast2PC : PolicyRequirement.None;
-            qualifications |= _treasury >= 3 ? PolicyRequirement.AtLeast3Treasury : PolicyRequirement.None;
             qualifications |= IsGoverningIdeology(ideology) ? PolicyRequirement.Governing : PolicyRequirement.None;
-            qualifications |= _imperialPower != ImperialPower.SuperPower ? PolicyRequirement.NotSuperPower : PolicyRequirement.None;
-            
             return qualifications;
         }
 

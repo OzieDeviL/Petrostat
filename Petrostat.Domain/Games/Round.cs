@@ -25,14 +25,14 @@ namespace Petrostat.Domain
                 DisplayNumber = previousRound.DisplayNumber++;
             }
             if (previousRound.DisplayNumber == 3)
-                throw new Exception($"Three rounds have aleady been added to number {Turn.Number}, display number {Turn.DisplayNumber} in game {_game.Id}")
+                throw new Exception($"Three rounds have aleady been added to number {Turn.Number}, display number {Turn.DisplayNumber} in game {_game.Id}");
         }
 
         public Turn Turn { get; }
         public int DisplayNumber { get; set; }
         public bool IsFirstTurn { get; set; }
         public bool IsFinished { get; private set; }
-        public Dictionary<PolicyName, Ideology>
+        //public Dictionary<PolicyName, Ideology>
 
         public void Start()
         {
@@ -42,6 +42,7 @@ namespace Petrostat.Domain
 
         private Dictionary<PolicyName, Ideology> ChoosePolicies()
         {
+            throw new NotImplementedException();
         }
 
         public void OpenRoundCheck()

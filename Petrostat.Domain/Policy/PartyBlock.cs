@@ -2,27 +2,57 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static Petrostat.Domain.PolicyQualificationHelpers;
 
 namespace Petrostat.Domain.Ideologies
 {
-    public class PartyBlock : Policy
+    internal class PartyBlock : PolicyChoice
     {
-        public override string Name { get => "PartyBlock"; }
-        public override int NameByEnum { get => (int)Policies.PartyBlock; }
-        public PoliticalParty TargetParty { get; set; }
-        public override List<int> RequirementsEnums
+        public override PolicyName Name { get => PolicyName.PartyBlock; }
+        public override void Play()
+        {
+            throw new NotImplementedException();
+        }
+        public override string Description => "Blocks other players from taking leadership of your party this round";
+
+        protected override List<PolicyRequirement> MinimumRequirementCombinations
         {
             get
             {
-                List<int> requirementsEnums = new List<int>
+                var requirementsEnums = new List<PolicyRequirement>
                 {
-                    (int)PolicyRequirement.AtLeast2PC
-                  + (int)PolicyRequirement.BeInParty
-                  + (int)PolicyRequirement.BePartyLeader
+                        PolicyRequirement.AtLeast2PC
+                    |   PolicyRequirement.BePartyLeader
                 };
                 return requirementsEnums;
             }
         }
+        
+        protected override PolicyRequirement DetermineCurrentQualifications(Ideology ideology, Population targetPopulation = null)
+        {
+            var qualifications = PolicyRequirement.None;
+            
+            qualifications |= ideology.PoliticalCapital >= 2 ? PolicyRequirement.AtLeast2PC : PolicyRequirement.None;
+            qualifications |= (ideology.CurrentParty != null && ideology.CurrentParty.Leader == ideology) ? PolicyRequirement.BePartyLeader : PolicyRequirement.None;           
+            
+            return qualifications;
+        }
 
-    }
+
+        protected override bool IsSuccess()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnSuccess()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnFailure()
+        {
+            throw new NotImplementedException();
+        }
+
+    }    
 }

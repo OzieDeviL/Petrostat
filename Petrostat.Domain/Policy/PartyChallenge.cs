@@ -2,28 +2,57 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using static Petrostat.Domain.PolicyQualificationHelpers;
 
 namespace Petrostat.Domain.Ideologies
 {
-    public class PartyChallenge : Policy
+    internal class PartyChallenge : PolicyChoice
     {
-        public override string Name { get => "PartyChallenge"; }
-        public override int NameByEnum { get => (int)Policies.PartyChallenge; }
-        public PoliticalParty TargetParty;
-        public override List<int> RequirementsEnums
+        public override PolicyName Name { get => PolicyName.PartyBlock; }
+        public override void Play()
+        {
+            throw new NotImplementedException();
+        }
+        public override string Description => "Take leadership of your current party.";
+
+        protected override List<PolicyRequirement> MinimumRequirementCombinations
         {
             get
             {
-                List<int> requirementsEnums = new List<int>
+                var requirementsEnums = new List<PolicyRequirement>
                 {
-                    (int)PolicyRequirement.AtLeast2PC
-                  + (int)PolicyRequirement.BeInParty
-                  + (int)PolicyRequirement.BeNonLeadingPartyMember
-                  + (int)PolicyRequirement.PartyChallengesNotBlocked
+                        PolicyRequirement.AtLeast2PC
+                    |   PolicyRequirement.BeNonLeadingPartyMember
                 };
                 return requirementsEnums;
             }
         }
+        
+        protected override PolicyRequirement DetermineCurrentQualifications(Ideology ideology, Population targetPopulation = null)
+        {
+            var qualifications = PolicyRequirement.None;
+            
+            qualifications |= ideology.PoliticalCapital >= 2 ? PolicyRequirement.AtLeast2PC : PolicyRequirement.None;
+            qualifications |= (ideology.CurrentParty != null && ideology.CurrentParty.Leader != ideology) ? PolicyRequirement.BeNonLeadingPartyMember : PolicyRequirement.None;           
+            
+            return qualifications;
+        }
 
-    }
+
+        protected override bool IsSuccess()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnSuccess()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnFailure()
+        {
+            throw new NotImplementedException();
+        }
+
+    }    
 }

@@ -18,5 +18,6 @@ namespace Petrostat.Domain
         public OilPrice OilPrice    { get; set; }
         public bool PeakOil         { get; set; }
         public Market Market { get; set; }
+        public int GlobalizationLevel {get;set;}
     }
 }

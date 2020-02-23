@@ -7,7 +7,7 @@ namespace Petrostat.Domain
     {
         public PolicyPlay(Guid policyRoundId
                         , Ideology ideology
-                        , Policy policy)
+                        , PolicyChoice policy)
         {
             Id = new Guid();
             PolicyRoundId = policyRoundId;
@@ -19,6 +19,6 @@ namespace Petrostat.Domain
         public Guid PolicyRoundId { get; set; }
         public int ChosenRound { get; set; }
         public Ideology Ideology {get;set;}
-        public Policy Policy { get; set; }
+        public PolicyChoice Policy { get; set; }
     }
 }

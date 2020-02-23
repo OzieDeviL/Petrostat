@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain.Ideologies
 {
-    class TaxReform : Policy
+    class TaxReform : PolicyChoice
     { 
         public override string Name { get => "TaxReform"; }
         public override int NameByEnum { get => (int)Policies.TaxReform; }

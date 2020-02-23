@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain.Ideologies
 {
-    class PropagandaWorkingClass : Policy
+    class PropagandaWorkingClass : PolicyChoice
     {
         public override string Name { get => "PropagandaWorkingClass"; }
         public override int NameByEnum { get => (int)Policies.PropagandaWorkingClass; }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain.Ideologies
 {
-    class ReligiousLawAdd : Policy
+    class ReligiousLawAdd : PolicyChoice
     {
         public ReligiousLawAdd(Guid roundId) : base(roundId) { }
    

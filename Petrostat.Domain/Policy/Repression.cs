@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain.Ideologies
 {
-    class Repression : Policy
+    class Repression : PolicyChoice
     {
         public override string Name { get => "Repression"; }
         public override int NameByEnum { get => (int)Policies.Repression; }
@@ -17,7 +17,7 @@ namespace Petrostat.Domain.Ideologies
                 List<int> requirementsEnums = new List<int>
                 {
                     (int)PolicyRequirement.AtLeast2PC
-                  + (int)PolicyRequirement.HaveArmy
+                  + (int)PolicyRequirement.AlignedArmy
                   + (int)PolicyRequirement.Governing
                   + (int)PolicyRequirement.AtLeast1ProtestingPopulation
                   + (int)PolicyRequirement.TargetPopulationsProtesting

@@ -5,16 +5,16 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Genocide
+    public class GenocideOccurence
     {
-        public Genocide(Game game, Population population, Ideology instigator)
-        {
-            Population = population;
-            if (instigator.IsGoverning)
-                ByGovernment = true;
-            game.VictoryEvents.Genocides.Add(this);
-        }
-        public Population Population { get; set; }
-        public bool ByGovernment { get; set; }
+        // public GenocideOccurence(Game game, Population population, Ideology instigator)
+        // {
+        //     Population = population;
+        //     if (instigator.IsGoverning)
+        //         ByGovernment = true;
+        //     game.VictoryEvents.Genocides.Add(this);
+        // }
+        // public Population Population { get; set; }
+        // public bool ByGovernment { get; set; }
     }
 }

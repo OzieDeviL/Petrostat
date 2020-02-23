@@ -5,27 +5,48 @@ using System.Text;
 
 namespace Petrostat.Domain.Ideologies
 {
-    class Genocide : Policy
+    internal class Genocide : PolicyChoice
     {
-        public Genocide(Guid roundId) : base(roundId)
-        {
-        }
+        public override PolicyName Name { get => PolicyName.Genocide; }
 
-        public override string Name { get => "Genocide"; }
-        public override int NameByEnum { get => (int)Policies.Genocide; }
-        public override List<int> RequirementsEnums
+        public override void Play()
+        {
+            throw new NotImplementedException();
+        }
+        public override string Description => "Target a population or army marker. Remove the targeted marker from the from the population and distribute half its wealth and spending among markers of your choice. Genocide may be challenged by any army after the target marker is announced—see manual for conflict rules.";
+
+        protected override List<PolicyRequirement> MinimumRequirementCombinations
         {
             get
             {
-                List<int> requirementsEnums = new List<int>
+                var requirementsEnums = new List<PolicyRequirement>
                 {
-                    (int)PolicyRequirement.AtLeast3PC
-                  + (int)PolicyRequirement.HaveArmy
-                  + (int)PolicyRequirement.AtLeast1NonAlignedPopulation
+                    PolicyRequirement.AtLeast3PC
                 };
                 return requirementsEnums;
             }
         }
+        
+        protected override PolicyRequirement DetermineCurrentQualifications(Ideology ideology, Population targetPopulation = null)
+        {
+            return ideology.PoliticalCapital >= 3 ? PolicyRequirement.AtLeast3PC : PolicyRequirement.None;
+        }
 
-    }
+
+        protected override bool IsSuccess()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnSuccess()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void OnFailure()
+        {
+            throw new NotImplementedException();
+        }
+
+    }    
 }

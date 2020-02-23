@@ -12,7 +12,7 @@ namespace Petrostat.Domain.Enums
             , PropagandaBlocking = 1 << 1
             , Repression = 1 << 2
             , PartyBlock = 1 << 3
-            , Army = 1 << 4
+            , ArmyMobilize = 1 << 4
             , ProtestAdd = 1 << 5
             , Coup = 1 << 6
             , Genocide = 1 << 7
@@ -20,8 +20,8 @@ namespace Petrostat.Domain.Enums
             , StateSecurity = 1 << 9
             , TaxReform = 1 << 10
             , SocialSpending = 1 << 11
-            , Imperialism = 1 << 12
-            , Globalization = 1 << 13
+            , ImperialismIncrease = 1 << 12
+            , GlobalizationDecrease = 1 << 13
             , PropagandaPoor = 1 << 14
             , PropagandaWorkingClass = 1 << 15
             , PropagandaMiddleClass = 1 << 16
@@ -32,6 +32,9 @@ namespace Petrostat.Domain.Enums
             , PartyJoin = 1 << 21
             , ProtestRemove = 1 << 22
             , ReligiousLawRemove = 1 << 23
+            , ArmyDemobilize = 1 << 24
+            , GlobalizationIncrease = 1 << 25
+            , ImperialismDecrease = 1 << 26
     
     }
 }

@@ -34,7 +34,7 @@ namespace Petrostat.Domain
         private static int State (Nation nation, Ideology ideology)
         {
             int state = (int)Policies.None;
-            if (ideology.Armies > 0) { state += (int)PolicyRequirement.HaveArmy; }
+            if (ideology.Armies > 0) { state += (int)PolicyRequirement.AlignedArmy; }
             if (ideology.IsGoverning) { state += (int)PolicyRequirement.Governing; }
             if (ideology.PoliticalCapital >= 1) { state += (int)PolicyRequirement.AtLeast1PC; }
             if (ideology.PoliticalCapital >= 2) { state += (int)PolicyRequirement.AtLeast2PC; }
