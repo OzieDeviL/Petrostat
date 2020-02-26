@@ -16,20 +16,20 @@ namespace Petrostat.Domain
             UIService = new ConsoleUIService(this);
         }
 
-        public int Id { get; set; }
-        public Guid EntityId { get; set; }
-        public Nation Nation { get; set; }
-        public Turn CurrentTurn { get; set; }
-        public IList<Turn> Turns { get; private set; }
-        public bool IncludesFundamentalist { get; private set; }
-        public bool IncludesNationalist { get; private set; }
-        public VictoryEvents VictoryEvents { get; set; }
-        public HashSet<Player> Players { get; set; }
-        public LinkedList<Ideology> TurnOrder { get; set; }
-        public IUIService UIService { get; }
-        public PlayerService PlayerService { get;}
+        internal Nation Nation { get; set; }
+        internal int Id { get; set; }
+        internal Guid EntityId { get; set; }
+        internal Turn CurrentTurn { get; set; }
+        internal IList<Turn> Turns { get; private set; }
+        internal bool IncludesFundamentalist { get; private set; }
+        internal bool IncludesNationalist { get; private set; }
+        internal VictoryEvents VictoryEvents { get; set; }
+        internal HashSet<Player> Players { get; set; }
+        internal LinkedList<Ideology> TurnOrder { get; set; }
+        internal IUIService UIService { get; }
+        internal PlayerService PlayerService { get;}
 
-        public void StartNewGame(HashSet<Player> players)
+        internal void StartNewGame(HashSet<Player> players)
         {
             var Players = PlayerService.GetPlayersForNewGame();
             if (Players.Count() < 7) { IncludesFundamentalist = false; }
@@ -93,7 +93,7 @@ namespace Petrostat.Domain
             return choices;
         }
 
-        public void UpdateTurnOrder(SortedDictionary<int, Player> playerPriorities)
+        private void UpdateTurnOrder(SortedDictionary<int, Player> playerPriorities)
         {
             var orderedPlayerPriorities = playerPriorities.OrderBy(daysSinceGas => daysSinceGas.Key);
             var node = new LinkedListNode<Ideology>(Nation.Ideologies.Single(i => i.Player.Id == orderedPlayerPriorities.First().Value.Id));

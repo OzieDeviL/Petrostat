@@ -3,11 +3,18 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using static Petrostat.Domain.Utilities.StaticUtilities;
+using Petrostat.Domain.Interfaces;
 
 namespace Petrostat.Domain
 {
-    public class PoliticalParty
+    public class PoliticalParty : IId
     {
+        public PoliticalParty () {
+            Id = PetroLuck.Next();
+        }
+
+        public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<Ideology> Members { get; set; }
         public IEnumerable<Ideology> NonRulingMembers => Members.Where(i => i != this.Leader);

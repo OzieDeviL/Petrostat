@@ -25,7 +25,7 @@ namespace Petrostat.Domain.Ideologies
         public Dictionary<int, Population> AlignedPopulation { get => game.Nation.Population.Where(p => p.Value.Alignment == Name).ToDictionary(kv => kv.Key, kv => kv.Value); }
         public Victory Victory { get; }
         public Player Player { get; set; }
-        public HashSet<PolicyRequirement> PolicyQualifications {get;set;}
+        public HashSet<PolicyChoiceRequirement> PolicyQualifications {get;set;}
 
         public abstract IdeologyName Name { get; }
         public abstract string Inspiration { get; }

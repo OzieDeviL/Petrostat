@@ -5,13 +5,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using static Petrostat.Domain.Utilities.StaticUtilities;
+using Petrostat.Domain.Interfaces;
 
 namespace Petrostat.Domain
 {
-    public class Population
+    internal class Population : IId
     {
         public Population(EconomicClass startingClass
-            , IdeologyName alignment
+            , Ideology alignment
             , Nation nation
             , bool isMajority = true)
         {
@@ -46,7 +47,7 @@ namespace Petrostat.Domain
 
         public int Id { get; set; }
         public int Number { get; }
-        public IdeologyName Alignment { get; set; }
+        public Ideology Alignment { get; set; }
         public bool IsMajority { get; set; }
         public EconomicClass EconomicClass
         {

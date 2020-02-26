@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Turn
+    internal class Turn
     {
         private readonly Game _game;
 
@@ -27,7 +27,7 @@ namespace Petrostat.Domain
         public int Number   { get; private set; }
         public int DisplayNumber => Number + 1;
         public Round CurrentRound => Rounds.Last();
-        public IList<Round> Rounds { get; private set; }
+        public IList<Round> Rounds { get; set; }
         public bool IsFinished { get; set; }
 
         public void OpenTurnCheck ()

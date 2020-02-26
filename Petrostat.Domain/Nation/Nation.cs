@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Nation
+    internal class Nation
     {
         private readonly Game _game;    
 

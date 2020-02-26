@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Economy
+    internal class Economy
     {
         Nation nation;
 

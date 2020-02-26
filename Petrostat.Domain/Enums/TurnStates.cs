@@ -21,8 +21,5 @@ namespace Petrostat.Domain
         , PublicSpending = 1 << 10
         , PoliticalCapital = 1 << 11
         , VictoryPoints = 1 << 12
-        , FirstTurn = 1 << 13
-        , MiddleTurn = 1 << 14
-        , LastTurn = 1 << 15
     } 
 }

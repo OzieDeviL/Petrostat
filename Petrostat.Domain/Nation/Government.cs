@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Petrostat.Domain
 {
-    public class Government
+    internal class Government
     {
         private readonly Game _game;
 
@@ -32,6 +32,7 @@ namespace Petrostat.Domain
         public int ProtestCount => _game.Nation.Population.Where(p => p.Value.IsProtesting).Count();
         public HashSet<PoliticalParty> Parties  { get; set; }
         public PoliticalParty RulingParty       { get; set; }
+        public bool ElectionsRepressed {get;set;}
 
         public void SetUp()
         {

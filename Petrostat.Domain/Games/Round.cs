@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Round
+    internal class Round
     {
         private readonly Game _game;
 
@@ -32,7 +32,10 @@ namespace Petrostat.Domain
         public int DisplayNumber { get; set; }
         public bool IsFirstTurn { get; set; }
         public bool IsFinished { get; private set; }
-        //public Dictionary<PolicyName, Ideology>
+        
+        public Dictionary<Ideology, PolicyChoice> PolicyChoices { get; set; }
+
+        public bool PolicyChoicesLocked { get; set; }
 
         public void Start()
         {

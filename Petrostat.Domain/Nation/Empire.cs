@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Empire
+    internal class Empire
     {
         Nation nation;
 

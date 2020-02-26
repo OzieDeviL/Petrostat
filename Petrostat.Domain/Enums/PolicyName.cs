@@ -9,7 +9,7 @@ namespace Petrostat.Domain.Enums
     {
         None = 0
             , Rally = 1
-            , PropagandaBlocking = 1 << 1
+            , Propaganda = 1 << 1
             , Repression = 1 << 2
             , PartyBlock = 1 << 3
             , ArmyMobilize = 1 << 4
@@ -18,7 +18,7 @@ namespace Petrostat.Domain.Enums
             , Genocide = 1 << 7
             , ReligiousLawAdd = 1 << 8
             , StateSecurity = 1 << 9
-            , TaxReform = 1 << 10
+            , TaxesAdd = 1 << 10
             , SocialSpending = 1 << 11
             , ImperialismIncrease = 1 << 12
             , GlobalizationDecrease = 1 << 13
@@ -35,6 +35,7 @@ namespace Petrostat.Domain.Enums
             , ArmyDemobilize = 1 << 24
             , GlobalizationIncrease = 1 << 25
             , ImperialismDecrease = 1 << 26
+            , TaxesRemove = 1 << 27
     
     }
 }

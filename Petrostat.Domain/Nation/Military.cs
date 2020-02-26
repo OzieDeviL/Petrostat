@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class Military
+    internal class Military
     {
         private readonly Game _game;
 

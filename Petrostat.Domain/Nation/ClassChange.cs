@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Petrostat.Domain
 {
-    public class ClassChange
+    internal class ClassChange
     {
         public ClassChange(
             Game game,
